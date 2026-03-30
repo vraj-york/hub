@@ -87,7 +87,7 @@ export default function App() {
   };
 
   return (
-    <div className="size-full bg-neutral-900 overflow-hidden">
+    <div className="app-surface size-full overflow-hidden">
       <AnimatePresence mode="wait">
         {/* Show loading skeleton when navigating */}
         {isLoading && loadingView && (
@@ -100,7 +100,7 @@ export default function App() {
               duration: 0.2,
               ease: "easeInOut"
             }}
-            className="size-full bg-neutral-900"
+            className="size-full bg-transparent"
           >
             {renderSkeleton(loadingView)}
           </motion.div>
@@ -117,7 +117,7 @@ export default function App() {
               duration: 0.4,
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="size-full bg-neutral-900"
+            className="size-full bg-transparent"
           >
             {authMode === 'login' ? (
               <InteractiveLogin 
@@ -144,7 +144,7 @@ export default function App() {
               duration: 0.4,
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="size-full bg-neutral-900"
+            className="size-full bg-transparent"
           >
             <EnhancedChatScreen
               user={user}
@@ -168,7 +168,7 @@ export default function App() {
               duration: 0.4,
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="size-full bg-neutral-900"
+            className="size-full bg-transparent"
           >
             <MyTeam
               user={user}
@@ -192,7 +192,7 @@ export default function App() {
               duration: 0.4,
               ease: [0.16, 1, 0.3, 1]
             }}
-            className="size-full bg-neutral-900"
+            className="size-full bg-transparent"
           >
             <Integration
               user={user}
