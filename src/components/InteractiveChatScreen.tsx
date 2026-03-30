@@ -236,11 +236,11 @@ export default function InteractiveChatScreen({
         damping: 30,
         width: { duration: 0.3, ease: "easeInOut" }
       }}
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
       style={{ width: sidebarOpen ? (isCollapsed ? 80 : 312) : 312 }}
     >
       {/* Logo */}
-      <div className="relative shrink-0 w-full border-b border-[#3d3d3d]">
+      <div className="relative shrink-0 w-full border-b border-[#334155]">
         <div className="flex flex-row items-end relative size-full">
           <div className="box-border content-stretch flex flex-row items-end justify-between pb-5 pt-4 px-5 relative w-full">
             {isCollapsed ? (
@@ -387,7 +387,7 @@ export default function InteractiveChatScreen({
                       transition={{ duration: 0.3, delay: index * 0.1 }}
                       whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', x: 2 }}
                       className={`box-border content-stretch flex flex-row gap-2.5 items-center justify-start px-0 py-3 relative shrink-0 w-full ${
-                        selectedChat === chat.title ? 'bg-[#5e97ff]/20' : ''
+                        selectedChat === chat.title ? 'bg-[#3b82f6]/20' : ''
                       }`}
                     >
                       <div className="basis-0 flex flex-col font-['Lufga:Regular',_sans-serif] grow justify-center leading-[0] min-h-px min-w-px not-italic overflow-ellipsis overflow-hidden relative shrink-0 text-[#ffffff] text-[14px] text-left text-nowrap">
@@ -411,7 +411,7 @@ export default function InteractiveChatScreen({
             <motion.button
               onClick={onNavigateToTeam}
               whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', scale: isCollapsed ? 1.05 : 1 }}
-              className={`box-border content-stretch flex flex-row gap-2.5 items-center ${isCollapsed ? 'justify-center' : 'justify-start'} px-0 py-4 relative shrink-0 w-full border-b border-[#3d3d3d] ${currentView === 'team' ? 'bg-[#5e97ff]/10' : ''}`}
+              className={`box-border content-stretch flex flex-row gap-2.5 items-center ${isCollapsed ? 'justify-center' : 'justify-start'} px-0 py-4 relative shrink-0 w-full border-b border-[#334155] ${currentView === 'team' ? 'bg-[#3b82f6]/10' : ''}`}
               title={isCollapsed ? "My Team" : ""}
             >
               <motion.div 
@@ -982,7 +982,7 @@ export default function InteractiveChatScreen({
                   className="relative shrink-0 size-8"
                 >
                   <img
-                    className="block size-full rounded-full border border-[#5e97ff]"
+                    className="block size-full rounded-full border border-[#3b82f6]"
                     src={imgImage21}
                     alt="AI Assistant"
                   />
@@ -990,7 +990,7 @@ export default function InteractiveChatScreen({
               )}
               
               {editingMessageId === message.id ? (
-                <div className="bg-[#242424] p-4 rounded-lg max-w-[70%]">
+                <div className="bg-[#1e293b] p-4 rounded-lg max-w-[70%]">
                   <textarea
                     value={editingText}
                     onChange={(e) => setEditingText(e.target.value)}
@@ -1023,7 +1023,7 @@ export default function InteractiveChatScreen({
                   className={`max-w-[70%] p-4 rounded-lg relative ${
                     message.isUser 
                       ? 'bg-gradient-to-r from-[#1738DE] to-[#5E97FF] text-white' 
-                      : 'bg-[#242424] text-white'
+                      : 'bg-[#1e293b] text-white'
                   }`}
                 >
                   <div className="text-[14px] leading-relaxed">
@@ -1041,7 +1041,7 @@ export default function InteractiveChatScreen({
                   className="relative shrink-0 size-8"
                 >
                   <img
-                    className="block size-full rounded-full border border-[#5e97ff]"
+                    className="block size-full rounded-full border border-[#3b82f6]"
                     src={imgAvatarStyle6}
                     alt="User Avatar"
                   />
@@ -1095,7 +1095,7 @@ export default function InteractiveChatScreen({
           animate={{ opacity: 1, y: 0 }}
           className="flex justify-start"
         >
-          <div className="bg-[#242424] p-4 rounded-lg">
+          <div className="bg-[#1e293b] p-4 rounded-lg">
             <div className="flex space-x-1">
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
@@ -1129,7 +1129,7 @@ export default function InteractiveChatScreen({
       className="box-border content-stretch flex flex-col items-center justify-center p-0 relative shrink-0 w-full"
     >
       <div className="box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-[900px] max-w-[90%]">
-        <div className="basis-0 bg-[#242424] grow min-h-px min-w-px relative rounded-bl-[12px] rounded-tl-[12px] shrink-0">
+        <div className="basis-0 bg-[#1e293b] grow min-h-px min-w-px relative rounded-bl-[12px] rounded-tl-[12px] shrink-0">
           <div className="flex flex-row items-center relative size-full">
             <div className="box-border content-stretch flex flex-row items-center justify-between p-[20px] relative w-full">
               <input
@@ -1215,7 +1215,7 @@ export default function InteractiveChatScreen({
           }`}
           style={{
             backgroundImage:
-              "linear-gradient(90.4065deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+              "linear-gradient(90.4065deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
           }}
         >
           <motion.div 
@@ -1247,8 +1247,8 @@ export default function InteractiveChatScreen({
           theme="dark"
           toastOptions={{
             style: {
-              background: '#242424',
-              border: '1px solid #3d3d3d',
+              background: '#1e293b',
+              border: '1px solid #334155',
               color: '#fff',
             },
           }}
@@ -1265,8 +1265,8 @@ export default function InteractiveChatScreen({
         theme="dark"
         toastOptions={{
           style: {
-            background: '#242424',
-            border: '1px solid #3d3d3d',
+            background: '#1e293b',
+            border: '1px solid #334155',
             color: '#fff',
           },
         }}
@@ -1286,9 +1286,9 @@ export default function InteractiveChatScreen({
               ) : (
                 <>
                   {renderChatMessages()}
-                  <div className="box-border content-stretch flex flex-col gap-0 items-center justify-start p-5 relative shrink-0 w-full border-t border-[#3d3d3d]">
+                  <div className="box-border content-stretch flex flex-col gap-0 items-center justify-start p-5 relative shrink-0 w-full border-t border-[#334155]">
                     <div className="box-border content-stretch flex flex-row gap-4 items-end justify-start p-0 relative shrink-0 w-full max-w-4xl">
-                      <div className="basis-0 bg-[#242424] border border-[#3d3d3d] box-border content-stretch flex flex-row gap-0 grow items-center justify-start min-h-px min-w-px p-4 relative rounded-lg shrink-0">
+                      <div className="basis-0 bg-[#1e293b] border border-[#334155] box-border content-stretch flex flex-row gap-0 grow items-center justify-start min-h-px min-w-px p-4 relative rounded-lg shrink-0">
                         <textarea
                           value={inputValue}
                           onChange={(e) => setInputValue(e.target.value)}
@@ -1311,7 +1311,7 @@ export default function InteractiveChatScreen({
                         className={`h-12 relative rounded-lg shrink-0 w-12 transition-all duration-200 ${
                           inputValue.trim() 
                             ? 'bg-gradient-to-r from-[#1738DE] to-[#5E97FF] cursor-pointer' 
-                            : 'bg-[#3d3d3d] cursor-not-allowed'
+                            : 'bg-[#334155] cursor-not-allowed'
                         }`}
                       >
                         <motion.div 

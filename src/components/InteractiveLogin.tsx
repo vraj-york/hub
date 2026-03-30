@@ -49,7 +49,7 @@ const InputField: React.FC<InputFieldProps> = ({
     >
       <motion.label
         animate={{ 
-          color: isFocused ? '#5e97ff' : '#ffffff',
+          color: isFocused ? '#3b82f6' : '#ffffff',
           scale: isFocused ? 1.02 : 1
         }}
         transition={{ duration: 0.2 }}
@@ -69,10 +69,10 @@ const InputField: React.FC<InputFieldProps> = ({
           placeholder={placeholder}
           whileFocus={{ 
             scale: 1.01,
-            boxShadow: '0 0 0 2px rgba(94, 151, 255, 0.3)',
+            boxShadow: '0 0 0 2px rgba(59, 130, 246, 0.3)',
           }}
-          className={`bg-[#242424] border border-[#3d3d3d] box-border content-stretch h-14 p-4 relative rounded-lg shrink-0 w-full text-white placeholder-white/50 text-[16px] outline-none transition-all duration-200 pr-${rightIcon ? '12' : '4'} ${
-            error ? 'border-red-500 focus:border-red-500' : 'focus:border-[#5e97ff] hover:border-[#4d4d4d]'
+          className={`bg-[#1e293b] border border-[#334155] box-border content-stretch h-14 p-4 relative rounded-lg shrink-0 w-full text-white placeholder-white/50 text-[16px] outline-none transition-all duration-200 pr-${rightIcon ? '12' : '4'} ${
+            error ? 'border-red-500 focus:border-red-500' : 'focus:border-[#3b82f6] hover:border-[#475569]'
           }`}
         />
         {rightIcon && (
@@ -183,14 +183,14 @@ export default function InteractiveLogin({
   };
 
   return (
-    <div className="backdrop-blur-[48.25px] backdrop-filter bg-neutral-900 box-border content-stretch flex flex-row items-center justify-start p-0 relative size-full">
+    <div className="backdrop-blur-[48.25px] backdrop-filter bg-[#0f172acc] box-border content-stretch flex flex-row items-center justify-start p-0 relative size-full">
       <Toaster 
         position="top-right"
         toastOptions={{
           style: {
-            background: '#242424',
+            background: '#1e293b',
             color: '#ffffff',
-            border: '1px solid #3d3d3d',
+            border: '1px solid #334155',
           },
         }}
       />
@@ -236,7 +236,7 @@ export default function InteractiveLogin({
                   <div className="flex flex-col justify-center relative shrink-0 text-[32px] text-neutral-50 text-nowrap font-semibold">
                     <p className="block leading-[normal] whitespace-pre">Login</p>
                   </div>
-                  <div className="flex flex-col justify-center relative shrink-0 text-[#8692a6] text-[18px] w-[411px]">
+                  <div className="flex flex-col justify-center relative shrink-0 text-gray-300 text-[18px] w-[411px]">
                     <p className="block leading-[28px]">
                       Add your credentials to log in
                     </p>
@@ -282,11 +282,11 @@ export default function InteractiveLogin({
                   type="submit"
                   onClick={handleSubmit}
                   disabled={isLoading}
-                  whileHover={{ scale: isLoading ? 1 : 1.02, boxShadow: '0 8px 25px rgba(94, 151, 255, 0.3)' }}
+                  whileHover={{ scale: isLoading ? 1 : 1.02, boxShadow: '0 8px 25px rgba(59, 130, 246, 0.3)' }}
                   whileTap={{ scale: isLoading ? 1 : 0.98 }}
                   className="box-border content-stretch flex flex-row gap-14 h-14 items-center justify-center p-[16px] relative rounded-lg shrink-0 w-[445px] transition-all duration-200 disabled:opacity-50"
                   style={{
-                    backgroundImage: "linear-gradient(93.4416deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                    backgroundImage: "linear-gradient(93.4416deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                   }}
                 >
                   <div className="flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[20px] text-center text-nowrap font-semibold">
@@ -358,7 +358,7 @@ export default function InteractiveLogin({
                       Don't have an Account?
                     </span>
                     <span className="font-semibold"> </span>
-                    <span className="[text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-style:solid] [text-underline-position:from-font] text-[#5e97ff] hover:text-[#4285f4] transition-colors">
+                    <span className="[text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-style:solid] [text-underline-position:from-font] text-[#3b82f6] hover:text-[#60a5fa] transition-colors">
                       Register
                     </span>
                   </p>
@@ -412,11 +412,11 @@ export default function InteractiveLogin({
                 <motion.div
                   animate={{
                     background: [
-                      'linear-gradient(45deg, rgba(94, 151, 255, 0.1) 0%, rgba(23, 56, 222, 0.05) 50%, rgba(94, 151, 255, 0.1) 100%)',
-                      'linear-gradient(135deg, rgba(23, 56, 222, 0.1) 0%, rgba(94, 151, 255, 0.05) 50%, rgba(23, 56, 222, 0.1) 100%)',
-                      'linear-gradient(225deg, rgba(94, 151, 255, 0.1) 0%, rgba(23, 56, 222, 0.05) 50%, rgba(94, 151, 255, 0.1) 100%)',
-                      'linear-gradient(315deg, rgba(23, 56, 222, 0.1) 0%, rgba(94, 151, 255, 0.05) 50%, rgba(23, 56, 222, 0.1) 100%)',
-                      'linear-gradient(45deg, rgba(94, 151, 255, 0.1) 0%, rgba(23, 56, 222, 0.05) 50%, rgba(94, 151, 255, 0.1) 100%)'
+                      'linear-gradient(45deg, rgba(59, 130, 246, 0.1) 0%, rgba(29, 78, 216, 0.05) 50%, rgba(59, 130, 246, 0.1) 100%)',
+                      'linear-gradient(135deg, rgba(29, 78, 216, 0.1) 0%, rgba(59, 130, 246, 0.05) 50%, rgba(29, 78, 216, 0.1) 100%)',
+                      'linear-gradient(225deg, rgba(59, 130, 246, 0.1) 0%, rgba(29, 78, 216, 0.05) 50%, rgba(59, 130, 246, 0.1) 100%)',
+                      'linear-gradient(315deg, rgba(29, 78, 216, 0.1) 0%, rgba(59, 130, 246, 0.05) 50%, rgba(29, 78, 216, 0.1) 100%)',
+                      'linear-gradient(45deg, rgba(59, 130, 246, 0.1) 0%, rgba(29, 78, 216, 0.05) 50%, rgba(59, 130, 246, 0.1) 100%)'
                     ]
                   }}
                   transition={{
@@ -441,7 +441,7 @@ export default function InteractiveLogin({
                   className="absolute inset-0 bg-gradient-to-tr from-blue-400/10 via-transparent to-purple-400/10 rounded-[40px]"
                   style={{
                     filter: 'blur(1px)',
-                    boxShadow: 'inset 0 0 50px rgba(94, 151, 255, 0.1)'
+                    boxShadow: 'inset 0 0 50px rgba(59, 130, 246, 0.1)'
                   }}
                 />
 
@@ -480,8 +480,8 @@ export default function InteractiveLogin({
                   className="absolute inset-0"
                   style={{
                     backgroundImage: `
-                      linear-gradient(90deg, rgba(94, 151, 255, 0.1) 1px, transparent 1px),
-                      linear-gradient(rgba(94, 151, 255, 0.1) 1px, transparent 1px)
+                      linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                      linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px)
                     `,
                     backgroundSize: '40px 40px',
                     filter: 'blur(0.5px)'

@@ -159,10 +159,10 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
       initial={{ x: 0 }}
       animate={{ width: sidebarCollapsed ? 72 : 312 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
     >
       {/* Logo */}
-      <div className="relative shrink-0 w-full border-b border-[#3d3d3d]">
+      <div className="relative shrink-0 w-full border-b border-[#334155]">
         <div className="flex flex-row items-center relative size-full">
           <div className={`box-border content-stretch flex flex-row items-center ${sidebarCollapsed ? 'justify-center' : 'justify-between'} pb-5 pt-4 px-5 relative w-full`}>
             <AnimatePresence mode="wait">
@@ -267,7 +267,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                   whileTap={{ scale: 0.98 }}
                   className="h-10 relative rounded-lg shrink-0 w-[272px]"
                   style={{
-                    backgroundImage: "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                    backgroundImage: "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                   }}
                 >
                   <div className="flex flex-row items-center justify-center relative size-full">
@@ -406,7 +406,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
         <div className="relative shrink-0 w-full">
           <motion.button
             whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', scale: sidebarCollapsed ? 1.05 : 1 }}
-            className={`box-border content-stretch flex flex-row gap-2.5 items-center ${sidebarCollapsed ? 'justify-center px-2 py-3' : 'justify-center px-3 py-4'} relative shrink-0 w-full bg-[#5e97ff]/10 ${sidebarCollapsed ? 'rounded-lg' : 'mx-2 rounded-lg'}`}
+            className={`box-border content-stretch flex flex-row gap-2.5 items-center ${sidebarCollapsed ? 'justify-center px-2 py-3' : 'justify-center px-3 py-4'} relative shrink-0 w-full bg-[#3b82f6]/10 ${sidebarCollapsed ? 'rounded-lg' : 'mx-2 rounded-lg'}`}
           >
             <motion.div
               animate={{ scale: sidebarCollapsed ? 1.1 : 1 }}
@@ -477,7 +477,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.2 }}
                         onClick={() => setShowMyAccount(true)}
-                        className="font-bold leading-[0] relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap cursor-pointer hover:text-[#5e97ff] transition-colors"
+                        className="font-bold leading-[0] relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap cursor-pointer hover:text-[#3b82f6] transition-colors"
                       >
                         <p className="block leading-none whitespace-pre">{user?.name || 'Adela Parkson'}</p>
                       </motion.button>
@@ -517,7 +517,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
       whileHover={{ scale: 1.02, y: -2 }}
       whileTap={{ scale: 0.98 }}
       onClick={() => handleIntegrationClick(integration)}
-      className="bg-[#242424] relative rounded-xl shrink-0 cursor-pointer flex-1 min-w-0"
+      className="bg-[#1e293b] relative rounded-xl shrink-0 cursor-pointer flex-1 min-w-0"
       style={{ flexBasis: 'calc(33.33% - 13.33px)' }}
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -614,7 +614,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-[#242424] border border-[#3d3d3d] rounded-2xl p-8 max-w-md w-full mx-4 relative shadow-2xl"
+              className="bg-[#1e293b] border border-[#334155] rounded-2xl p-8 max-w-md w-full mx-4 relative shadow-2xl"
             >
               {/* Close Button */}
               <motion.button
@@ -643,13 +643,13 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
               </div>
 
               {/* Auth Method Tabs */}
-              <div className="flex mb-6 bg-[#1a1a1a] rounded-lg p-1">
+              <div className="flex mb-6 bg-[#111d35] rounded-lg p-1">
                 <motion.button
                   onClick={() => setAuthMethod('api-key')}
                   whileTap={{ scale: 0.98 }}
                   className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all ${
                     authMethod === 'api-key'
-                      ? 'bg-[#5e97ff] text-white shadow-lg'
+                      ? 'bg-[#3b82f6] text-white shadow-lg'
                       : 'text-white/70 hover:text-white hover:bg-white/5'
                   }`}
                 >
@@ -660,7 +660,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                   whileTap={{ scale: 0.98 }}
                   className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-all ${
                     authMethod === 'credentials'
-                      ? 'bg-[#5e97ff] text-white shadow-lg'
+                      ? 'bg-[#3b82f6] text-white shadow-lg'
                       : 'text-white/70 hover:text-white hover:bg-white/5'
                   }`}
                 >
@@ -682,7 +682,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                         initial={{ opacity: 0, x: -10 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: index * 0.1 }}
-                        className="flex items-center gap-3 p-3 bg-[#1a1a1a] rounded-lg border border-[#3d3d3d]"
+                        className="flex items-center gap-3 p-3 bg-[#111d35] rounded-lg border border-[#334155]"
                       >
                         <code className="flex-1 text-sm text-white/80 font-mono truncate">
                           {key}
@@ -706,16 +706,16 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                       value={newApiKey}
                       onChange={(e) => setNewApiKey(e.target.value)}
                       placeholder="Enter new API key..."
-                      className="w-full p-3 bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg text-white placeholder-white/50 focus:border-[#5e97ff] focus:outline-none transition-colors"
+                      className="w-full p-3 bg-[#111d35] border border-[#334155] rounded-lg text-white placeholder-white/50 focus:border-[#3b82f6] focus:outline-none transition-colors"
                     />
                     <motion.button
                       onClick={handleAddApiKey}
                       disabled={!newApiKey.trim()}
                       whileHover={newApiKey.trim() ? { scale: 1.02 } : {}}
                       whileTap={newApiKey.trim() ? { scale: 0.98 } : {}}
-                      className="w-full flex items-center justify-center gap-2 py-3 disabled:bg-[#3d3d3d] disabled:cursor-not-allowed text-white rounded-lg transition-colors"
+                      className="w-full flex items-center justify-center gap-2 py-3 disabled:bg-[#334155] disabled:cursor-not-allowed text-white rounded-lg transition-colors"
                       style={newApiKey.trim() ? {
-                        backgroundImage: "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                        backgroundImage: "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                       } : {}}
                     >
                       <Plus size={16} />
@@ -737,7 +737,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                     <input
                       type="text"
                       placeholder="Enter username"
-                      className="w-full p-3 bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg text-white placeholder-white/50 focus:border-[#5e97ff] focus:outline-none transition-colors"
+                      className="w-full p-3 bg-[#111d35] border border-[#334155] rounded-lg text-white placeholder-white/50 focus:border-[#3b82f6] focus:outline-none transition-colors"
                     />
                   </div>
                   <div>
@@ -745,7 +745,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                     <input
                       type="password"
                       placeholder="Enter password"
-                      className="w-full p-3 bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg text-white placeholder-white/50 focus:border-[#5e97ff] focus:outline-none transition-colors"
+                      className="w-full p-3 bg-[#111d35] border border-[#334155] rounded-lg text-white placeholder-white/50 focus:border-[#3b82f6] focus:outline-none transition-colors"
                     />
                   </div>
                 </motion.div>
@@ -757,7 +757,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                   onClick={handleClosePopup}
                   whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
                   whileTap={{ scale: 0.98 }}
-                  className="flex-1 py-3 border border-[#3d3d3d] text-white rounded-lg hover:bg-white/5 transition-colors"
+                  className="flex-1 py-3 border border-[#334155] text-white rounded-lg hover:bg-white/5 transition-colors"
                 >
                   Cancel
                 </motion.button>
@@ -767,7 +767,7 @@ export default function Integration({ onNavigateToChat, onNavigateToTeam, user, 
                   whileTap={{ scale: 0.98 }}
                   className="flex-1 py-3 text-white rounded-lg transition-colors font-medium"
                   style={{
-                    backgroundImage: "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                    backgroundImage: "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                   }}
                 >
                   Save Configuration

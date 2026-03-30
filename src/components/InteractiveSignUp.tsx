@@ -65,7 +65,7 @@ const InputField: React.FC<InputFieldProps> = ({
     >
       <motion.label
         animate={{ 
-          color: isFocused ? '#5e97ff' : '#ffffff',
+          color: isFocused ? '#3b82f6' : '#ffffff',
           scale: isFocused ? 1.02 : 1
         }}
         transition={{ duration: 0.2 }}
@@ -85,10 +85,10 @@ const InputField: React.FC<InputFieldProps> = ({
           placeholder={placeholder}
           whileFocus={{ 
             scale: 1.01,
-            boxShadow: '0 0 0 2px rgba(94, 151, 255, 0.3)',
+            boxShadow: '0 0 0 2px rgba(59, 130, 246, 0.3)',
           }}
-          className={`bg-[#242424] border border-[#3d3d3d] box-border content-stretch h-14 p-4 relative rounded-lg shrink-0 w-full text-white placeholder-white/50 text-[16px] outline-none transition-all duration-200 pr-${rightIcon ? '12' : '4'} ${
-            error ? 'border-red-500 focus:border-red-500' : 'focus:border-[#5e97ff] hover:border-[#4d4d4d]'
+          className={`bg-[#1e293b] border border-[#334155] box-border content-stretch h-14 p-4 relative rounded-lg shrink-0 w-full text-white placeholder-white/50 text-[16px] outline-none transition-all duration-200 pr-${rightIcon ? '12' : '4'} ${
+            error ? 'border-red-500 focus:border-red-500' : 'focus:border-[#3b82f6] hover:border-[#475569]'
           }`}
         />
         {rightIcon && (
@@ -260,13 +260,13 @@ export default function InteractiveSignUp({ onSignUp, onSwitchToLogin }: SignUpP
         theme="dark"
         toastOptions={{
           style: {
-            background: '#242424',
-            border: '1px solid #3d3d3d',
+            background: '#1e293b',
+            border: '1px solid #334155',
             color: '#fff',
           },
         }}
       />
-      <div className="backdrop-blur-[48.25px] backdrop-filter bg-[#171717cc] bg-neutral-900 relative size-full">
+      <div className="backdrop-blur-[48.25px] backdrop-filter bg-[#0f172acc] relative size-full">
         <div className="flex flex-row items-center relative size-full">
           <div className="box-border content-stretch flex flex-row gap-[120px] items-center justify-start pl-20 pr-10 py-10 relative size-full">
             <motion.div
@@ -307,7 +307,7 @@ export default function InteractiveSignUp({ onSignUp, onSwitchToLogin }: SignUpP
                   <div className="flex flex-col justify-center relative shrink-0 text-[32px] text-neutral-50 text-nowrap font-semibold">
                     <p className="block leading-[normal] whitespace-pre">Create an Account</p>
                   </div>
-                  <div className="flex flex-col justify-center relative shrink-0 text-[#8692a6] text-[18px] w-[411px]">
+                  <div className="flex flex-col justify-center relative shrink-0 text-gray-300 text-[18px] w-[411px]">
                     <p className="block leading-[28px]">
                       Kindly fill in your details to create an account
                     </p>
@@ -425,11 +425,11 @@ export default function InteractiveSignUp({ onSignUp, onSwitchToLogin }: SignUpP
                   type="submit"
                   onClick={handleSubmit}
                   disabled={isLoading}
-                  whileHover={{ scale: isLoading ? 1 : 1.02, boxShadow: '0 8px 25px rgba(94, 151, 255, 0.3)' }}
+                  whileHover={{ scale: isLoading ? 1 : 1.02, boxShadow: '0 8px 25px rgba(59, 130, 246, 0.3)' }}
                   whileTap={{ scale: isLoading ? 1 : 0.98 }}
                   className="box-border content-stretch flex flex-row gap-14 h-14 items-center justify-center p-[16px] relative rounded-lg shrink-0 w-[445px] transition-all duration-200 disabled:opacity-50"
                   style={{
-                    backgroundImage: "linear-gradient(93.4416deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                    backgroundImage: "linear-gradient(93.4416deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                   }}
                 >
                   <div className="flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[20px] text-center text-nowrap font-semibold">
@@ -481,7 +481,7 @@ export default function InteractiveSignUp({ onSignUp, onSwitchToLogin }: SignUpP
                       Already have an Account?
                     </span>
                     <span className="font-semibold"> </span>
-                    <span className="[text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-style:solid] [text-underline-position:from-font] text-[#5e97ff] hover:text-[#4285f4] transition-colors">
+                    <span className="[text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-style:solid] [text-underline-position:from-font] text-[#3b82f6] hover:text-[#60a5fa] transition-colors">
                       Login
                     </span>
                   </p>

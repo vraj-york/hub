@@ -59,7 +59,7 @@ function Frame1000002428() {
 function Frame1000002425() {
   return (
     <div className="relative shrink-0 w-full">
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-4 items-center justify-start pl-8 pr-5 py-5 relative w-full">
           <div
@@ -149,7 +149,7 @@ function PayoutOptions() {
 function Control1() {
   return (
     <div className="relative rounded-xl shrink-0 size-6" data-name="Control">
-      <div className="absolute border-2 border-[#3d3d3d] border-solid inset-0 pointer-events-none rounded-xl" />
+      <div className="absolute border-2 border-[#334155] border-solid inset-0 pointer-events-none rounded-xl" />
     </div>
   );
 }
@@ -327,9 +327,9 @@ function OutlineEssentionalUiPlus() {
 function Frame1000002258() {
   return (
     <div className="box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-center p-[16px] relative rounded-lg shrink-0 w-[487px]">
-      <div className="absolute border border-[#5e97ff] border-dashed inset-0 pointer-events-none rounded-lg" />
+      <div className="absolute border border-[#3b82f6] border-dashed inset-0 pointer-events-none rounded-lg" />
       <OutlineEssentionalUiPlus />
-      <div className="flex flex-col font-['Lufga:Medium',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#5e97ff] text-[16px] text-left text-nowrap">
+      <div className="flex flex-col font-['Lufga:Medium',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#3b82f6] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">Add New API key</p>
       </div>
     </div>
@@ -358,7 +358,7 @@ function Button() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(91.409deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(91.409deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -414,7 +414,7 @@ function NewCHat1() {
 function Frame1000002393() {
   return (
     <div className="relative shrink-0 w-full">
-      <div className="absolute border-[#3d3d3d] border-[1px_0px_0px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[1px_0px_0px] border-solid inset-0 pointer-events-none" />
       <div className="relative size-full">
         <div className="box-border content-stretch cursor-pointer flex flex-row gap-2.5 items-start justify-start px-8 py-5 relative w-full">
           <NewCHat />
@@ -428,7 +428,7 @@ function Frame1000002393() {
 function Integration() {
   return (
     <div
-      className="bg-[#242424] box-border content-stretch flex flex-col items-start justify-start p-0 relative rounded-xl shrink-0 w-[842px]"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col items-start justify-start p-0 relative rounded-xl shrink-0 w-[842px]"
       data-name="Integration"
     >
       <Frame1000002425 />

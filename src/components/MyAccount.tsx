@@ -77,8 +77,8 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
         theme="dark"
         toastOptions={{
           style: {
-            background: '#242424',
-            border: '1px solid #3d3d3d',
+            background: '#1e293b',
+            border: '1px solid #334155',
             color: '#fff',
           },
         }}
@@ -98,7 +98,7 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
           className="bg-neutral-900 rounded-xl w-full max-w-6xl max-h-[90vh] overflow-hidden"
         >
           {/* Header */}
-          <div className="relative border-b border-[#3d3d3d] p-6">
+          <div className="relative border-b border-[#334155] p-6">
             <div className="flex items-center justify-between">
               <h2 className="text-white font-semibold text-[24px]">My Account</h2>
               <motion.button
@@ -140,7 +140,7 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
                 {/* Full Name */}
                 <div className="flex-1 space-y-3">
                   <label className="block text-white/70 text-[14px]">Full Name</label>
-                  <div className="bg-[#242424] rounded-lg p-4 h-14 flex items-center">
+                  <div className="bg-[#1e293b] rounded-lg p-4 h-14 flex items-center">
                     <span className="text-white text-[16px]">{user.name}</span>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
                 {/* Email */}
                 <div className="flex-1 space-y-3">
                   <label className="block text-white/70 text-[14px]">Email</label>
-                  <div className="bg-[#242424] rounded-lg p-4 h-14 flex items-center">
+                  <div className="bg-[#1e293b] rounded-lg p-4 h-14 flex items-center">
                     <span className="text-white/50 text-[16px]">{user.email}</span>
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
               {/* Current Password */}
               <div className="space-y-3 max-w-[445px]">
                 <label className="block text-white/70 text-[14px]">Current Password</label>
-                <div className="bg-[#242424] rounded-lg p-4 h-14 flex items-center justify-between">
+                <div className="bg-[#1e293b] rounded-lg p-4 h-14 flex items-center justify-between">
                   <input
                     type={showPasswords.current ? "text" : "password"}
                     value={passwords.current}
@@ -188,7 +188,7 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
                 {/* New Password */}
                 <div className="flex-1 space-y-3">
                   <label className="block text-white/70 text-[14px]">New Password</label>
-                  <div className="bg-[#242424] rounded-lg p-4 h-14 flex items-center justify-between">
+                  <div className="bg-[#1e293b] rounded-lg p-4 h-14 flex items-center justify-between">
                     <input
                       type={showPasswords.new ? "text" : "password"}
                       value={passwords.new}
@@ -210,7 +210,7 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
                 {/* Confirm New Password */}
                 <div className="flex-1 space-y-3">
                   <label className="block text-white/70 text-[14px]">Confirm New Password</label>
-                  <div className="bg-[#242424] rounded-lg p-4 h-14 flex items-center justify-between">
+                  <div className="bg-[#1e293b] rounded-lg p-4 h-14 flex items-center justify-between">
                     <input
                       type={showPasswords.confirm ? "text" : "password"}
                       value={passwords.confirm}
@@ -232,12 +232,12 @@ export default function MyAccount({ user, isOpen, onClose }: MyAccountProps) {
             </div>
 
             {/* Action Buttons */}
-            <div className="border-t border-[#3d3d3d] pt-6 flex gap-2.5">
+            <div className="border-t border-[#334155] pt-6 flex gap-2.5">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={handleSaveChanges}
-                className="w-40 h-14 rounded-lg bg-gradient-to-r from-[#5e97ff] to-[#1738de] text-white text-[16px] font-semibold"
+                className="w-40 h-14 rounded-lg bg-gradient-to-r from-[#3b82f6] to-[#1d4ed8] text-white text-[16px] font-semibold"
               >
                 Save & Update
               </motion.button>

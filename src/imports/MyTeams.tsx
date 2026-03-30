@@ -69,7 +69,7 @@ function TechSavvy() {
               </div>
             </div>
           </div>
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">Admin</p>
           </div>
           <div
@@ -150,7 +150,7 @@ function StartContent() {
 function Logo() {
   return (
     <div className="relative shrink-0 w-full" data-name="Logo">
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-end relative size-full">
         <div className="box-border content-stretch flex flex-row items-end justify-between pb-5 pt-4 px-5 relative w-full">
           <Group33081 />
@@ -211,7 +211,7 @@ function Button() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -433,10 +433,10 @@ function StartContent4() {
 function NewCHat11() {
   return (
     <button
-      className="bg-[#3d3d3d] cursor-pointer relative rounded-lg shrink-0 w-full"
+      className="bg-[#334155] cursor-pointer relative rounded-lg shrink-0 w-full"
       data-name="New CHat"
     >
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none rounded-lg" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none rounded-lg" />
       <div className="flex flex-row items-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2.5 items-center justify-start px-2.5 py-4 relative w-full">
           <StartContent4 />
@@ -618,7 +618,7 @@ function Frame1000002397() {
 function Sidebar() {
   return (
     <div
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
       data-name="Sidebar"
     >
       <Logo />
@@ -679,7 +679,7 @@ function Button1() {
       className="box-border content-stretch flex flex-row gap-1.5 h-10 items-center justify-center p-[12px] relative rounded-lg shrink-0"
       data-name="Button"
     >
-      <div className="absolute border border-[#5e97ff] border-solid inset-0 pointer-events-none rounded-lg" />
+      <div className="absolute border border-[#3b82f6] border-solid inset-0 pointer-events-none rounded-lg" />
       <StartContent8 />
       <div className="flex flex-col font-['Lufga:SemiBold',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[14px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">Add Member</p>
@@ -769,13 +769,13 @@ function Delete() {
 function TechSavvy1() {
   return (
     <div
-      className="[grid-area:1_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:1_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002364 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete />
@@ -855,13 +855,13 @@ function Delete1() {
 function TechSavvy2() {
   return (
     <div
-      className="[grid-area:1_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:1_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002365 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete1 />
@@ -941,13 +941,13 @@ function Delete2() {
 function TechSavvy3() {
   return (
     <div
-      className="[grid-area:1_/_4] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:1_/_4] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002366 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete2 />
@@ -1024,13 +1024,13 @@ function Delete3() {
 function TechSavvy4() {
   return (
     <div
-      className="[grid-area:2_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002367 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete3 />
@@ -1107,13 +1107,13 @@ function Delete4() {
 function TechSavvy5() {
   return (
     <div
-      className="[grid-area:2_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002368 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete4 />
@@ -1190,13 +1190,13 @@ function Delete5() {
 function TechSavvy6() {
   return (
     <div
-      className="[grid-area:2_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002369 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete5 />
@@ -1273,13 +1273,13 @@ function Delete6() {
 function TechSavvy7() {
   return (
     <div
-      className="[grid-area:2_/_4] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_4] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002370 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete6 />
@@ -1357,13 +1357,13 @@ function Delete7() {
 function TechSavvy8() {
   return (
     <div
-      className="[grid-area:3_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002371 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete7 />
@@ -1441,13 +1441,13 @@ function Delete8() {
 function TechSavvy9() {
   return (
     <div
-      className="[grid-area:3_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002372 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete8 />
@@ -1525,13 +1525,13 @@ function Delete9() {
 function TechSavvy10() {
   return (
     <div
-      className="[grid-area:3_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002373 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete9 />
@@ -1609,13 +1609,13 @@ function Delete10() {
 function TechSavvy11() {
   return (
     <div
-      className="[grid-area:3_/_4] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_4] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Tech Savvy"
     >
       <div className="flex flex-col items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
           <Frame1000002374 />
-          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+          <div className="font-['Lufga:Regular',_sans-serif] leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
             <p className="block leading-[normal]">User</p>
           </div>
           <Delete10 />
@@ -1632,7 +1632,7 @@ function TeamMembers() {
       data-name="Team Members"
     >
       <div
-        className="[grid-area:1_/_1] bg-[#242424] relative rounded-xl shrink-0"
+        className="[grid-area:1_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
         data-name="Tech Savvy"
       >
         <TechSavvy />

@@ -77,7 +77,7 @@ function StartContent() {
 function Logo() {
   return (
     <div className="relative shrink-0 w-full" data-name="Logo">
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-end relative size-full">
         <div className="box-border content-stretch flex flex-row items-end justify-between pb-5 pt-4 px-5 relative w-full">
           <Group33081 />
@@ -138,7 +138,7 @@ function Button() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -396,7 +396,7 @@ function StartContent5() {
 function NewCHat12() {
   return (
     <div
-      className="bg-[#3d3d3d] relative rounded-lg shrink-0 w-full"
+      className="bg-[#334155] relative rounded-lg shrink-0 w-full"
       data-name="New CHat"
     >
       <div className="flex flex-row items-center relative size-full">
@@ -544,7 +544,7 @@ function Frame1000002397() {
 function Sidebar() {
   return (
     <div
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
       data-name="Sidebar"
     >
       <Logo />
@@ -604,7 +604,7 @@ function Frame1000002425() {
 function Integration() {
   return (
     <div
-      className="[grid-area:1_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:1_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -654,7 +654,7 @@ function Frame1000002429() {
 function Integration1() {
   return (
     <div
-      className="[grid-area:1_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:1_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -704,7 +704,7 @@ function Frame1000002431() {
 function Integration2() {
   return (
     <div
-      className="[grid-area:1_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:1_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -754,7 +754,7 @@ function Frame1000002433() {
 function Integration3() {
   return (
     <div
-      className="[grid-area:2_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -804,7 +804,7 @@ function Frame1000002436() {
 function Integration4() {
   return (
     <div
-      className="[grid-area:2_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -854,7 +854,7 @@ function Frame1000002439() {
 function Integration5() {
   return (
     <div
-      className="[grid-area:2_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:2_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -904,7 +904,7 @@ function Frame1000002442() {
 function Integration6() {
   return (
     <div
-      className="[grid-area:3_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -954,7 +954,7 @@ function Frame1000002445() {
 function Integration7() {
   return (
     <div
-      className="[grid-area:3_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1004,7 +1004,7 @@ function Frame1000002448() {
 function Integration8() {
   return (
     <div
-      className="[grid-area:3_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:3_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1054,7 +1054,7 @@ function Frame1000002450() {
 function Integration9() {
   return (
     <div
-      className="[grid-area:4_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:4_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1104,7 +1104,7 @@ function Frame1000002453() {
 function Integration10() {
   return (
     <div
-      className="[grid-area:4_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:4_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1154,7 +1154,7 @@ function Frame1000002456() {
 function Integration11() {
   return (
     <div
-      className="[grid-area:4_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:4_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1204,7 +1204,7 @@ function Frame1000002459() {
 function Integration12() {
   return (
     <div
-      className="[grid-area:5_/_1] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:5_/_1] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1254,7 +1254,7 @@ function Frame1000002462() {
 function Integration13() {
   return (
     <div
-      className="[grid-area:5_/_2] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:5_/_2] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">
@@ -1304,7 +1304,7 @@ function Frame1000002465() {
 function Integration14() {
   return (
     <div
-      className="[grid-area:5_/_3] bg-[#242424] relative rounded-xl shrink-0"
+      className="[grid-area:5_/_3] bg-[#1e293b] relative rounded-xl shrink-0"
       data-name="Integration"
     >
       <div className="flex flex-col justify-center relative size-full">

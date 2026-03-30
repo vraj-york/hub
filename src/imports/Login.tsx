@@ -49,7 +49,7 @@ function Frame1000002255() {
 
 function Frame1000002256() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-start p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-start p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-center leading-[0] not-italic opacity-50 relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">
           Enter your email
@@ -96,7 +96,7 @@ function MdiEye() {
 
 function Frame1000002257() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-center leading-[0] not-italic opacity-50 relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">Enter password</p>
       </div>
@@ -152,7 +152,7 @@ function Button() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(93.4416deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(93.4416deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-col font-['Lufga:SemiBold',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[20px] text-center text-nowrap">
@@ -303,7 +303,7 @@ function Frame1000002266() {
             Don’t have an Account?
           </span>
           <span className="font-['Lufga:SemiBold',_sans-serif]"> </span>
-          <span className="[text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-style:solid] [text-underline-position:from-font] font-['Lufga:Regular',_sans-serif] text-[#5e97ff]">
+          <span className="[text-decoration-line:underline] [text-decoration-skip-ink:none] [text-decoration-style:solid] [text-underline-position:from-font] font-['Lufga:Regular',_sans-serif] text-[#3b82f6]">
             Register
           </span>
         </p>
@@ -332,7 +332,7 @@ function Frame1000002381() {
 export default function Login() {
   return (
     <div
-      className="backdrop-blur-[48.25px] backdrop-filter bg-[#171717cc] bg-neutral-900 relative size-full"
+      className="backdrop-blur-[48.25px] backdrop-filter bg-[#0f172acc] bg-neutral-900 relative size-full"
       data-name="Login"
     >
       <div className="flex flex-row items-center relative size-full">

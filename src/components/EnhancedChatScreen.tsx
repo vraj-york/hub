@@ -372,10 +372,10 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
       initial={{ x: 0 }}
       animate={{ width: sidebarCollapsed ? 72 : 312 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
     >
       {/* Logo */}
-      <div className="relative shrink-0 w-full border-b border-[#3d3d3d]">
+      <div className="relative shrink-0 w-full border-b border-[#334155]">
         <div className="flex flex-row items-center relative size-full">
           <div className={`box-border content-stretch flex flex-row items-center ${sidebarCollapsed ? 'justify-center' : 'justify-between'} pb-5 pt-4 px-5 relative w-full`}>
             <AnimatePresence mode="wait">
@@ -480,7 +480,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                   whileTap={{ scale: 0.98 }}
                   className="h-10 relative rounded-lg shrink-0 w-[272px]"
                   style={{
-                    backgroundImage: "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                    backgroundImage: "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                   }}
                 >
                   <div className="flex flex-row items-center justify-center relative size-full">
@@ -631,7 +631,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
           <motion.button
             onClick={onNavigateToTeam}
             whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', scale: sidebarCollapsed ? 1.05 : 1 }}
-            className={`box-border content-stretch flex flex-row gap-2.5 items-center ${sidebarCollapsed ? 'justify-center px-2 py-3' : 'justify-center px-3 py-4'} relative shrink-0 w-full ${currentView === 'team' ? 'bg-[#5e97ff]/10' : ''} ${sidebarCollapsed ? 'rounded-lg' : 'mx-2 rounded-lg'}`}
+            className={`box-border content-stretch flex flex-row gap-2.5 items-center ${sidebarCollapsed ? 'justify-center px-2 py-3' : 'justify-center px-3 py-4'} relative shrink-0 w-full ${currentView === 'team' ? 'bg-[#3b82f6]/10' : ''} ${sidebarCollapsed ? 'rounded-lg' : 'mx-2 rounded-lg'}`}
           >
             <motion.div
               animate={{ scale: sidebarCollapsed ? 1.1 : 1 }}
@@ -741,7 +741,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.2 }}
                         onClick={() => setShowMyAccount(true)}
-                        className="font-bold leading-[0] relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap cursor-pointer hover:text-[#5e97ff] transition-colors"
+                        className="font-bold leading-[0] relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap cursor-pointer hover:text-[#3b82f6] transition-colors"
                       >
                         <p className="block leading-none whitespace-pre">{user.name}</p>
                       </motion.button>
@@ -833,7 +833,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                     whileHover={{ scale: 1.02 }}
                     className="box-border content-stretch flex flex-row gap-2.5 items-center justify-center p-[16px] relative rounded-lg shrink-0"
                     style={{
-                      backgroundImage: "linear-gradient(93.0505deg, rgb(23, 56, 222) 13.302%, rgb(94, 151, 255) 93.324%)",
+                      backgroundImage: "linear-gradient(93.0505deg, rgb(29, 78, 216) 13.302%, rgb(59, 130, 246) 93.324%)",
                     }}
                   >
                     {editingMessageId === message.id ? (
@@ -841,7 +841,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                         <textarea
                           value={editingText}
                           onChange={(e) => setEditingText(e.target.value)}
-                          className="w-full bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg px-3 py-2 text-white placeholder-white/50 focus:border-[#5e97ff] focus:outline-none resize-none"
+                          className="w-full bg-[#111d35] border border-[#334155] rounded-lg px-3 py-2 text-white placeholder-white/50 focus:border-[#3b82f6] focus:outline-none resize-none"
                           rows={4}
                         />
                         <div className="flex gap-2">
@@ -849,7 +849,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={() => handleSaveEdit(message.id)}
-                            className="flex items-center gap-2 px-3 py-1.5 bg-[#5e97ff] text-white rounded-lg text-sm hover:bg-[#4d7fee] transition-colors"
+                            className="flex items-center gap-2 px-3 py-1.5 bg-[#3b82f6] text-white rounded-lg text-sm hover:bg-[#2563eb] transition-colors"
                           >
                             <Check size={14} />
                             Save
@@ -858,7 +858,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             onClick={handleCancelEdit}
-                            className="flex items-center gap-2 px-3 py-1.5 bg-[#3d3d3d] text-white rounded-lg text-sm hover:bg-[#4d4d4d] transition-colors"
+                            className="flex items-center gap-2 px-3 py-1.5 bg-[#334155] text-white rounded-lg text-sm hover:bg-[#475569] transition-colors"
                           >
                             <X size={14} />
                             Cancel
@@ -880,7 +880,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                           initial={{ opacity: 0, scale: 0.8, y: -5 }}
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.8, y: -5 }}
-                          className="absolute -bottom-12 right-0 flex gap-2 bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg p-2 shadow-lg z-10"
+                          className="absolute -bottom-12 right-0 flex gap-2 bg-[#111d35] border border-[#334155] rounded-lg p-2 shadow-lg z-10"
                         >
                           <motion.button
                             whileHover={{ scale: 1.1, backgroundColor: '#2a2a2a' }}
@@ -907,7 +907,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                 ) : (
                   <motion.div
                     whileHover={{ backgroundColor: '#2a2a2a' }}
-                    className="bg-[#242424] relative rounded-lg shrink-0 transition-colors duration-200"
+                    className="bg-[#1e293b] relative rounded-lg shrink-0 transition-colors duration-200"
                   >
                     <div className="flex flex-row items-center justify-center relative size-full">
                       <div className="box-border content-stretch flex flex-row gap-2.5 items-center justify-center p-[16px] relative w-full">
@@ -926,7 +926,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
                           initial={{ opacity: 0, scale: 0.8, y: -5 }}
                           animate={{ opacity: 1, scale: 1, y: 0 }}
                           exit={{ opacity: 0, scale: 0.8, y: -5 }}
-                          className="absolute -bottom-12 left-0 flex gap-2 bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg p-2 shadow-lg z-10"
+                          className="absolute -bottom-12 left-0 flex gap-2 bg-[#111d35] border border-[#334155] rounded-lg p-2 shadow-lg z-10"
                         >
                           <motion.button
                             whileHover={{ scale: 1.1, backgroundColor: '#2a2a2a' }}
@@ -971,7 +971,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
               className="box-border content-stretch flex flex-row gap-2.5 items-end justify-start p-0 relative shrink-0 w-full"
             >
               <div className="bg-center bg-cover bg-no-repeat h-8 shrink-0 w-[33px]" style={{ backgroundImage: `url('${imgImage21}')` }} />
-              <div className="bg-[#242424] relative rounded-lg shrink-0 p-4">
+              <div className="bg-[#1e293b] relative rounded-lg shrink-0 p-4">
                 <div className="flex gap-1">
                   <motion.div
                     animate={{ scale: [1, 1.2, 1] }}
@@ -1007,7 +1007,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
         transition={{ duration: 0.5 }}
         className="box-border content-stretch flex flex-row items-start justify-start p-0 relative shrink-0 w-[900px] max-w-full"
       >
-        <div className="basis-0 bg-[#242424] grow min-h-px min-w-px relative rounded-bl-[12px] rounded-tl-[12px] shrink-0">
+        <div className="basis-0 bg-[#1e293b] grow min-h-px min-w-px relative rounded-bl-[12px] rounded-tl-[12px] shrink-0">
           <div className="flex flex-row items-center relative size-full">
             <div className="box-border content-stretch flex flex-row items-center justify-between p-[20px] relative w-full">
               <input
@@ -1079,7 +1079,7 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
           whileTap={{ scale: inputValue.trim() && !isTyping ? 0.95 : 1 }}
           className="box-border content-stretch flex flex-row gap-2.5 items-center justify-center overflow-clip p-[18px] relative rounded-br-[12px] rounded-tr-[12px] self-stretch shrink-0 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
           style={{
-            backgroundImage: "linear-gradient(90.4065deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+            backgroundImage: "linear-gradient(90.4065deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
           }}
         >
           <motion.div
@@ -1105,8 +1105,8 @@ export default function EnhancedChatScreen({ user, onLogout, onNavigateToTeam, o
         theme="dark"
         toastOptions={{
           style: {
-            background: '#242424',
-            border: '1px solid #3d3d3d',
+            background: '#1e293b',
+            border: '1px solid #334155',
             color: '#fff',
           },
         }}

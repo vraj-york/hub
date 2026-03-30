@@ -91,10 +91,10 @@ export default function RightSidebar({ isCollapsed = false, onToggle }: RightSid
         initial={{ width: isCollapsed ? 72 : 280 }}
         animate={{ width: isCollapsed ? 72 : 280 }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="bg-[#242424] box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 h-full border-l border-[#3d3d3d]"
+        className="bg-[#1e293b] box-border content-stretch flex flex-col items-start justify-start p-0 relative shrink-0 h-full border-l border-[#334155]"
       >
         {/* Header */}
-        <div className="h-[61.354px] relative shrink-0 w-full border-b border-[#3d3d3d]">
+        <div className="h-[61.354px] relative shrink-0 w-full border-b border-[#334155]">
           <div className="flex flex-row items-center justify-center relative size-full">
             <div className={`box-border content-stretch flex flex-row h-[61.354px] items-center p-[20px] relative w-full ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
               <AnimatePresence mode="wait">

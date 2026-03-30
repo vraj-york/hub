@@ -39,7 +39,7 @@ function StartContent() {
 function Logo() {
   return (
     <div className="h-[61.354px] relative shrink-0 w-full" data-name="Logo">
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-1 h-[61.354px] items-center justify-center p-[20px] relative w-full">
           <StartContent />
@@ -153,7 +153,7 @@ function Frame1000002393() {
 export default function Sidebar() {
   return (
     <div
-      className="bg-[#242424] box-border content-stretch flex flex-col items-start justify-start p-0 relative size-full"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col items-start justify-start p-0 relative size-full"
       data-name="Sidebar"
     >
       <Logo />

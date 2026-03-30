@@ -63,7 +63,7 @@ function StartContent() {
 function Logo() {
   return (
     <div className="relative shrink-0 w-full" data-name="Logo">
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-end relative size-full">
         <div className="box-border content-stretch flex flex-row items-end justify-between pb-5 pt-4 px-5 relative w-full">
           <Group33081 />
@@ -124,7 +124,7 @@ function Button() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -346,10 +346,10 @@ function StartContent4() {
 function NewCHat11() {
   return (
     <div
-      className="bg-[#3d3d3d] relative rounded-lg shrink-0 w-full"
+      className="bg-[#334155] relative rounded-lg shrink-0 w-full"
       data-name="New CHat"
     >
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none rounded-lg" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none rounded-lg" />
       <div className="flex flex-row items-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2.5 items-center justify-start px-2.5 py-4 relative w-full">
           <StartContent4 />
@@ -531,7 +531,7 @@ function Frame1000002397() {
 function Sidebar() {
   return (
     <div
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
       data-name="Sidebar"
     >
       <Logo />
@@ -555,7 +555,7 @@ function Frame1000006981() {
 
 function Frame1000002256() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-start p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-start p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">Adela Parkson</p>
       </div>
@@ -579,7 +579,7 @@ function TextField() {
 
 function Frame1000002257() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-start p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row gap-2.5 h-14 items-center justify-start p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-center leading-[0] not-italic opacity-50 relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">
           adela.parkson@gmail.com
@@ -648,7 +648,7 @@ function MdiEye() {
 
 function Frame1000002258() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-end leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[32px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">***********</p>
       </div>
@@ -696,7 +696,7 @@ function MdiEye1() {
 
 function Frame1000002259() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-center leading-[0] not-italic opacity-50 relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">
           Enter new password
@@ -744,7 +744,7 @@ function MdiEye2() {
 
 function Frame1000002260() {
   return (
-    <div className="bg-[#242424] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
+    <div className="bg-[#1e293b] box-border content-stretch flex flex-row h-14 items-center justify-between p-[16px] relative rounded-lg shrink-0 w-[445px]">
       <div className="flex flex-col font-['Lufga:Regular',_sans-serif] justify-center leading-[0] not-italic opacity-50 relative shrink-0 text-[#ffffff] text-[16px] text-left text-nowrap">
         <p className="block leading-[normal] whitespace-pre">
           Enter new password again
@@ -848,7 +848,7 @@ function Button1() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(91.2387deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(91.2387deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -904,7 +904,7 @@ function NewCHat14() {
 function Frame1000002395() {
   return (
     <div className="box-border content-stretch flex flex-row gap-2.5 items-start justify-start pb-0 pt-6 px-0 relative shrink-0 w-full">
-      <div className="absolute border-[#3d3d3d] border-[1px_0px_0px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[1px_0px_0px] border-solid inset-0 pointer-events-none" />
       <NewCHat13 />
       <NewCHat14 />
     </div>

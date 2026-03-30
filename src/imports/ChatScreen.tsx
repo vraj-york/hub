@@ -63,7 +63,7 @@ function StartContent() {
 function Logo() {
   return (
     <div className="relative shrink-0 w-full" data-name="Logo">
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <div className="flex flex-row items-end relative size-full">
         <div className="box-border content-stretch flex flex-row items-end justify-between pb-5 pt-4 px-5 relative w-full">
           <Group33081 />
@@ -124,7 +124,7 @@ function Button() {
       data-name="Button"
       style={{
         backgroundImage:
-          "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <div className="flex flex-row items-center justify-center relative size-full">
@@ -349,7 +349,7 @@ function NewCHat11() {
       className="box-border content-stretch flex flex-row gap-2.5 items-center justify-start px-0 py-4 relative shrink-0 w-full"
       data-name="New CHat"
     >
-      <div className="absolute border-[#3d3d3d] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
+      <div className="absolute border-[#334155] border-[0px_0px_1px] border-solid inset-0 pointer-events-none" />
       <StartContent4 />
       <div className="basis-0 flex flex-col font-['Lufga:Medium',_sans-serif] grow justify-center leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#ffffff] text-[14px] text-left">
         <p className="block leading-[normal]">My Team</p>
@@ -526,7 +526,7 @@ function Frame1000002397() {
 function Sidebar() {
   return (
     <div
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-clip p-0 relative shrink-0 w-[312px]"
       data-name="Sidebar"
     >
       <Logo />
@@ -970,7 +970,7 @@ function Frame1000002355() {
 
 function Frame1000002336() {
   return (
-    <div className="basis-0 bg-[#242424] grow min-h-px min-w-px relative rounded-bl-[12px] rounded-tl-[12px] shrink-0">
+    <div className="basis-0 bg-[#1e293b] grow min-h-px min-w-px relative rounded-bl-[12px] rounded-tl-[12px] shrink-0">
       <div className="flex flex-row items-center relative size-full">
         <div className="box-border content-stretch flex flex-row items-center justify-between p-[20px] relative w-full">
           <div className="font-['Lufga:Regular',_sans-serif] leading-[0] not-italic relative shrink-0 text-[#bababa] text-[16px] text-center text-nowrap">
@@ -1009,7 +1009,7 @@ function DivIcon() {
       data-name="div.icon"
       style={{
         backgroundImage:
-          "linear-gradient(90.4065deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+          "linear-gradient(90.4065deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
       }}
     >
       <StartContent10 />

@@ -219,10 +219,10 @@ export default function MyTeam({
       initial={{ x: 0 }}
       animate={{ width: sidebarCollapsed ? 72 : 312 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="bg-[#242424] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
+      className="bg-[#1e293b] box-border content-stretch flex flex-col h-full items-start justify-start overflow-hidden p-0 relative shrink-0"
     >
       {/* Logo */}
-      <div className="relative shrink-0 w-full border-b border-[#3d3d3d]">
+      <div className="relative shrink-0 w-full border-b border-[#334155]">
         <div className="flex flex-row items-center relative size-full">
           <div className={`box-border content-stretch flex flex-row items-center ${sidebarCollapsed ? 'justify-center' : 'justify-between'} pb-5 pt-4 px-5 relative w-full`}>
             <AnimatePresence mode="wait">
@@ -325,7 +325,7 @@ export default function MyTeam({
                   onClick={onNavigateToChat}
                   whileHover={{ scale: 1.02, y: -1 }}
                   whileTap={{ scale: 0.98 }}
-                  className="h-10 relative rounded-lg shrink-0 w-[272px] border border-[#5e97ff]/30 hover:border-[#5e97ff] hover:bg-[#5e97ff]/10 transition-all duration-200"
+                  className="h-10 relative rounded-lg shrink-0 w-[272px] border border-[#3b82f6]/30 hover:border-[#3b82f6] hover:bg-[#3b82f6]/10 transition-all duration-200"
                 >
                   <div className="flex flex-row items-center justify-center relative size-full">
                     <div className="box-border content-stretch flex flex-row gap-1.5 h-10 items-center justify-center p-[12px] relative w-full">
@@ -370,7 +370,7 @@ export default function MyTeam({
                   whileTap={{ scale: 0.98 }}
                   className="h-10 relative rounded-lg shrink-0 w-[272px]"
                   style={{
-                    backgroundImage: "linear-gradient(92.946deg, rgb(94, 151, 255) 13.302%, rgb(23, 56, 222) 93.324%)",
+                    backgroundImage: "linear-gradient(92.946deg, rgb(59, 130, 246) 13.302%, rgb(29, 78, 216) 93.324%)",
                   }}
                 >
                   <div className="flex flex-row items-center justify-center relative size-full">
@@ -470,7 +470,7 @@ export default function MyTeam({
         <div className="relative shrink-0 w-full">
           <motion.button
             whileHover={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', scale: sidebarCollapsed ? 1.05 : 1 }}
-            className={`box-border content-stretch flex flex-row gap-2.5 items-center ${sidebarCollapsed ? 'justify-center px-2 py-3' : 'justify-center px-3 py-4'} relative shrink-0 w-full bg-[#5e97ff]/10 ${sidebarCollapsed ? 'rounded-lg' : 'mx-2 rounded-lg'}`}
+            className={`box-border content-stretch flex flex-row gap-2.5 items-center ${sidebarCollapsed ? 'justify-center px-2 py-3' : 'justify-center px-3 py-4'} relative shrink-0 w-full bg-[#3b82f6]/10 ${sidebarCollapsed ? 'rounded-lg' : 'mx-2 rounded-lg'}`}
           >
             <motion.div
               animate={{ scale: sidebarCollapsed ? 1.1 : 1 }}
@@ -580,7 +580,7 @@ export default function MyTeam({
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.2 }}
                         onClick={() => setShowMyAccount(true)}
-                        className="font-bold leading-[0] relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap cursor-pointer hover:text-[#5e97ff] transition-colors"
+                        className="font-bold leading-[0] relative shrink-0 text-[#ffffff] text-[14px] text-center text-nowrap cursor-pointer hover:text-[#3b82f6] transition-colors"
                       >
                         <p className="block leading-none whitespace-pre">{user.name}</p>
                       </motion.button>
@@ -620,8 +620,8 @@ export default function MyTeam({
         theme="dark"
         toastOptions={{
           style: {
-            background: '#242424',
-            border: '1px solid #3d3d3d',
+            background: '#1e293b',
+            border: '1px solid #334155',
             color: '#fff',
           },
         }}
@@ -650,7 +650,7 @@ export default function MyTeam({
                     onClick={() => setShowAddForm(true)}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="box-border content-stretch flex flex-row gap-1.5 h-10 items-center justify-center p-[12px] relative rounded-lg shrink-0 border border-[#5e97ff] transition-colors hover:bg-[#5e97ff]/10"
+                    className="box-border content-stretch flex flex-row gap-1.5 h-10 items-center justify-center p-[12px] relative rounded-lg shrink-0 border border-[#3b82f6] transition-colors hover:bg-[#3b82f6]/10"
                   >
                     <Plus size={18} className="text-white" />
                     <div className="flex flex-col justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[14px] text-left text-nowrap font-semibold">
@@ -683,7 +683,7 @@ export default function MyTeam({
                         whileHover={{ y: -5, scale: 1.02 }}
                         onMouseEnter={() => setHoveredMember(member.id)}
                         onMouseLeave={() => setHoveredMember(null)}
-                        className="bg-[#242424] relative rounded-xl shrink-0 cursor-pointer"
+                        className="bg-[#1e293b] relative rounded-xl shrink-0 cursor-pointer"
                       >
                         <div className="flex flex-col items-center justify-center relative size-full">
                           <div className="box-border content-stretch flex flex-col gap-4 items-center justify-center px-4 py-6 relative size-full">
@@ -696,7 +696,7 @@ export default function MyTeam({
                                 className="relative shrink-0 size-20"
                               >
                                 <img
-                                  className="block max-w-none size-full rounded-full border-2 border-[#5e97ff]/30"
+                                  className="block max-w-none size-full rounded-full border-2 border-[#3b82f6]/30"
                                   height="80"
                                   src={member.avatar}
                                   width="80"
@@ -719,13 +719,13 @@ export default function MyTeam({
                             </div>
                             
                             {/* Role Badge */}
-                            <div className="leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#5e97ff] text-[14px] text-center w-[164px]">
+                            <div className="leading-[0] max-w-[164px] not-italic relative shrink-0 text-[#3b82f6] text-[14px] text-center w-[164px]">
                               <motion.span
                                 initial={{ scale: 0.9 }}
                                 animate={{ scale: 1 }}
                                 className={`px-3 py-1 rounded-full text-xs font-medium ${
                                   member.role === 'Admin' 
-                                    ? 'bg-[#5e97ff]/20 text-[#5e97ff]' 
+                                    ? 'bg-[#3b82f6]/20 text-[#3b82f6]' 
                                     : 'bg-gray-600/20 text-gray-300'
                                 }`}
                               >
@@ -781,7 +781,7 @@ export default function MyTeam({
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
                 onClick={(e) => e.stopPropagation()}
-                className="bg-[#242424] rounded-xl p-6 w-full max-w-md border border-[#3d3d3d]"
+                className="bg-[#1e293b] rounded-xl p-6 w-full max-w-md border border-[#334155]"
               >
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-xl text-white font-semibold">Add Team Member</h2>
@@ -802,7 +802,7 @@ export default function MyTeam({
                       type="text"
                       value={newMember.name}
                       onChange={(e) => setNewMember(prev => ({ ...prev, name: e.target.value }))}
-                      className="w-full bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg px-3 py-2 text-white placeholder-white/50 focus:border-[#5e97ff] focus:outline-none"
+                      className="w-full bg-[#111d35] border border-[#334155] rounded-lg px-3 py-2 text-white placeholder-white/50 focus:border-[#3b82f6] focus:outline-none"
                       placeholder="Enter team member name"
                     />
                   </div>
@@ -813,7 +813,7 @@ export default function MyTeam({
                       type="email"
                       value={newMember.email}
                       onChange={(e) => setNewMember(prev => ({ ...prev, email: e.target.value }))}
-                      className="w-full bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg px-3 py-2 text-white placeholder-white/50 focus:border-[#5e97ff] focus:outline-none"
+                      className="w-full bg-[#111d35] border border-[#334155] rounded-lg px-3 py-2 text-white placeholder-white/50 focus:border-[#3b82f6] focus:outline-none"
                       placeholder="Enter email address"
                     />
                   </div>
@@ -823,7 +823,7 @@ export default function MyTeam({
                     <select
                       value={newMember.role}
                       onChange={(e) => setNewMember(prev => ({ ...prev, role: e.target.value }))}
-                      className="w-full bg-[#1a1a1a] border border-[#3d3d3d] rounded-lg px-3 py-2 text-white focus:border-[#5e97ff] focus:outline-none"
+                      className="w-full bg-[#111d35] border border-[#334155] rounded-lg px-3 py-2 text-white focus:border-[#3b82f6] focus:outline-none"
                     >
                       <option value="User">User</option>
                       <option value="Admin">Admin</option>
@@ -836,7 +836,7 @@ export default function MyTeam({
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={handleAddMember}
-                    className="flex-1 bg-[#5e97ff] text-white py-2 px-4 rounded-lg hover:bg-[#4d7fee] transition-colors"
+                    className="flex-1 bg-[#3b82f6] text-white py-2 px-4 rounded-lg hover:bg-[#2563eb] transition-colors"
                   >
                     Add Member
                   </motion.button>
@@ -844,7 +844,7 @@ export default function MyTeam({
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     onClick={() => setShowAddForm(false)}
-                    className="flex-1 bg-[#3d3d3d] text-white py-2 px-4 rounded-lg hover:bg-[#4d4d4d] transition-colors"
+                    className="flex-1 bg-[#334155] text-white py-2 px-4 rounded-lg hover:bg-[#475569] transition-colors"
                   >
                     Cancel
                   </motion.button>
