@@ -53,6 +53,8 @@ const theme = createTheme({
           '--color-light-grey-100': '#F1F0F7',
           '--color-dot-separator': '#649DAC',
           '--color-stroke-dark': '#344C56',
+          '--color-header-background':
+            'linear-gradient(120deg, #e0f4ff 0%, #c2e5ff 38%, #a8d8ff 100%)',
           '--box-shadow-header': '0px 1px 4px rgba(0, 0, 0, 0.05)',
           '--box-shadow-card': '0px 4px 12px rgba(0, 0, 0, 0.05)',
         },
