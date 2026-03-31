@@ -49,7 +49,7 @@ test.describe('Dashboard Page', () => {
     await page.goto('/dashboard');
     const region = page.getByRole('region', { name: 'Super Admin Persona Details' });
     await expect(region).toBeVisible({ timeout: 10000 });
-    await expect(region).toHaveText('Super Admin Persona - Light Theme');
+    await expect(region).toHaveText('Test Super Admin Persona');
   });
 
   test('SuperAdminPersonaDisplay has correct visual styles', async ({ page }) => {
@@ -59,7 +59,7 @@ test.describe('Dashboard Page', () => {
     // Browser may return rgb() for opaque rgba()
     const bgColor = await region.evaluate((el) => window.getComputedStyle(el).backgroundColor);
     expect(bgColor).toMatch(/rgb\(48,\s*95,\s*161\)|rgba\(48,\s*95,\s*161,\s*1\)/);
-    const text = region.getByText('Super Admin Persona - Light Theme');
+    const text = region.getByText('Test Super Admin Persona');
     await expect(text).toBeVisible();
     const textColor = await text.evaluate((el) => window.getComputedStyle(el).color);
     expect(textColor).toMatch(/rgb\(255,\s*255,\s*255\)|rgba\(255,\s*255,\s*255,\s*1\)/);

@@ -10,24 +10,13 @@ import {
   selectDashboardLoading,
   selectIsDashboardEmpty,
 } from '../store/slices/dashboardSlice';
-import {
-  selectCurrentPersonaType,
-  selectActiveThemePreference,
-} from '../store/slices/authSlice';
 import { setActiveSidebarItem } from '../store/slices/uiSlice';
-
-function themePreferenceToDisplay(preference) {
-  if (preference === 'dark') return 'Dark Theme';
-  return 'Light Theme';
-}
 
 export function DashboardPage() {
   const dispatch = useDispatch();
   const dashboardData = useSelector(selectDashboardData);
   const dashboardLoading = useSelector(selectDashboardLoading);
   const isEmptyState = useSelector(selectIsDashboardEmpty);
-  const personaType = useSelector(selectCurrentPersonaType);
-  const themePreference = useSelector(selectActiveThemePreference);
 
   useEffect(() => {
     dispatch(setActiveSidebarItem('dashboard'));
@@ -47,10 +36,7 @@ export function DashboardPage() {
     <SuperAdminLayout>
       <Box component="main" role="main" sx={{ py: 0, px: 0 }}>
         <Box sx={{ mb: 3 }}>
-          <SuperAdminPersonaDisplay
-            personaType={personaType ?? 'Super Admin Persona'}
-            themePreference={themePreferenceToDisplay(themePreference)}
-          />
+          <SuperAdminPersonaDisplay text="Test Super Admin Persona" />
         </Box>
         <Box
           sx={{

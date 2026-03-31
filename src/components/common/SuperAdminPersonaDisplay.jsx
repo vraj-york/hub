@@ -10,10 +10,12 @@ const DEFAULT_TEXT_COLOR = 'rgba(255, 255, 255, 1)';
 export function SuperAdminPersonaDisplay({
   personaType = 'Super Admin Persona',
   themePreference = 'Light Theme',
+  text,
   frameBackgroundColor = DEFAULT_FRAME_BG,
   textColor = DEFAULT_TEXT_COLOR,
 }) {
-  const displayText = `${personaType} - ${themePreference}`;
+  const displayText =
+    text ?? `${personaType} - ${themePreference}`;
 
   return (
     <Box
