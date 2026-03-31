@@ -55,7 +55,7 @@ export function TopNavigation({
     },
     {
       id: 'create',
-      label: 'Create Meeting',
+      label: 'Create New Meeting',
       icon: Plus,
       available: userPermissions.canCreateMeetings
     },
