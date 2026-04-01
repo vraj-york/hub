@@ -26,7 +26,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleSidebar, selectIsSidebarOpen } from '../../store/slices/uiSlice';
 import { selectCurrentCorporationLogoUrl } from '../../store/slices/corporationsSlice';
-import bspBlueprintLogo from '../../assets/images/bsp-blueprint-logo.png';
+import bspBlueprintLogo from '../../assets/images/client-link-48-88409125.jpg';
 
 const sidebarGroups = [
   {
@@ -134,7 +134,7 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
             <img
               src={logoSrc}
               alt={isCorporationProfilePage && corporationLogoUrl ? "Corporation logo" : "BSPBlueprint logo"}
-              style={{ height: 32, width: 'auto' }}
+              style={{ height: 32, width: 'auto', objectFit: 'contain' }}
             />
             {isCorporationProfilePage && corporationLogoUrl && (
               <Typography
