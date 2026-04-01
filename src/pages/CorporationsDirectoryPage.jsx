@@ -126,7 +126,7 @@ export function CorporationsDirectoryPage() {
               '&:hover': { background: 'rgba(48, 95, 161, 0.9)' },
             }}
           >
-            New Test
+            Add New Corporation
           </Button>
         </Box>
 
