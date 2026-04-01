@@ -5,7 +5,6 @@ import {
   Building2,
   Users,
   Settings,
-  LayoutDashboard,
   MapPin,
   UserRoundCog,
   UserStar,
@@ -31,7 +30,13 @@ import { selectCurrentCorporationLogoUrl } from '../../store/slices/corporations
 const sidebarGroups = [
   {
     label: 'Main',
-    items: [{ label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard }],
+    items: [
+      {
+        label: 'Dashboard',
+        path: '/dashboard',
+        iconSrc: '/images/image-14-f71e3aa5.png',
+      },
+    ],
   },
   {
     label: 'Administration',
@@ -192,7 +197,7 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
               {group.label}
             </Typography>
             {group.items.map((item) => {
-              const Icon = item.icon;
+              const Icon = item.icon ?? null;
               const isDashboard = item.path === '/dashboard';
               const isCompaniesDirectory = item.path === '/companies';
               const isActive =
@@ -245,18 +250,40 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
                     },
                   }}
                 >
-                  <Icon
-                    size={18}
-                    strokeWidth={1.5}
-                    style={{
-                      flexShrink: 0,
-                      color: Icon === Settings
-                        ? 'rgba(52, 76, 86, 1)'
-                        : isDashboardActive || isCompaniesDirectoryActive
-                          ? 'rgba(255, 255, 255, 1)'
-                          : 'rgba(47, 65, 74, 1)',
-                    }}
-                  />
+                  {item.iconSrc ? (
+                    <Box
+                      component="img"
+                      src={item.iconSrc}
+                      alt=""
+                      aria-hidden
+                      sx={{
+                        width: 18,
+                        height: 18,
+                        flexShrink: 0,
+                        objectFit: 'contain',
+                        display: 'block',
+                        filter:
+                          isDashboardActive || isCompaniesDirectoryActive
+                            ? 'brightness(0) invert(1)'
+                            : undefined,
+                      }}
+                    />
+                  ) : (
+                    Icon && (
+                      <Icon
+                        size={18}
+                        strokeWidth={1.5}
+                        style={{
+                          flexShrink: 0,
+                          color: Icon === Settings
+                            ? 'rgba(52, 76, 86, 1)'
+                            : isDashboardActive || isCompaniesDirectoryActive
+                              ? 'rgba(255, 255, 255, 1)'
+                              : 'rgba(47, 65, 74, 1)',
+                        }}
+                      />
+                    )
+                  )}
                   <Typography variant="body2" sx={{ fontWeight: 400, fontSize: '0.875rem', flex: 1 }}>
                     {item.label}
                   </Typography>
