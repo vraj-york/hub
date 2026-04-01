@@ -84,7 +84,19 @@ export function CorporationsDirectoryPage() {
   return (
     <SuperAdminLayout>
       <Box component="main" role="main" sx={{ py: 3, px: 0 }}>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 2, mb: 3 }}>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'flex-start',
+            flexWrap: 'wrap',
+            gap: 2,
+            mb: 3,
+            p: 2.5,
+            borderRadius: 2,
+            background: 'linear-gradient(135deg, rgba(48, 95, 161, 0.08) 0%, rgba(122, 169, 187, 0.12) 42%, rgba(248, 250, 252, 1) 100%)',
+          }}
+        >
           <Box>
             <Typography
               component="h1"
