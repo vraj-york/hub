@@ -15,6 +15,7 @@ import {
   selectActiveThemePreference,
 } from '../store/slices/authSlice';
 import { setActiveSidebarItem } from '../store/slices/uiSlice';
+import dashboardHeroIcon from '../assets/images/client-link-50-1657eca0.jpg';
 
 function themePreferenceToDisplay(preference) {
   if (preference === 'dark') return 'Dark Theme';
@@ -62,30 +63,54 @@ export function DashboardPage() {
             mb: 3,
           }}
         >
-          <Box>
-            <Typography
-              component="h1"
-              variant="h5"
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: { xs: 'center', lg: 'flex-start' },
+              textAlign: { xs: 'center', lg: 'left' },
+              gap: 0,
+            }}
+          >
+            <Box
+              component="img"
+              src={dashboardHeroIcon}
+              alt=""
+              aria-hidden
               sx={{
-                fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
-                fontWeight: 600,
-                fontSize: 16,
-                color: 'rgba(47, 65, 74, 1)',
-                mb: 0.5,
+                width: 48,
+                height: 48,
+                mr: 1.3125,
+                flexShrink: 0,
+                objectFit: 'contain',
+                display: 'block',
               }}
-            >
-              Dashboard Overview
-            </Typography>
-            <Typography
-              sx={{
-                fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
-                fontWeight: 400,
-                fontSize: 14,
-                color: 'rgba(56, 89, 102, 1)',
-              }}
-            >
-              Monitor and manage your entire platform
-            </Typography>
+            />
+            <Box>
+              <Typography
+                component="h1"
+                variant="h5"
+                sx={{
+                  fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
+                  fontWeight: 600,
+                  fontSize: 16,
+                  color: 'rgba(47, 65, 74, 1)',
+                  mb: 0.5,
+                }}
+              >
+                Dashboard Overview
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
+                  fontWeight: 400,
+                  fontSize: 14,
+                  color: 'rgba(56, 89, 102, 1)',
+                }}
+              >
+                Monitor and manage your entire platform
+              </Typography>
+            </Box>
           </Box>
           <ExportReportButton
             onClick={handleExportReport}
