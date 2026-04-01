@@ -73,7 +73,7 @@ export function AppHeader() {
     <Box
       sx={{
         height: 64,
-        background: 'var(--color-white)',
+        backgroundColor: 'var(--color-light-blue-100)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
