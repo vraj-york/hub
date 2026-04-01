@@ -1,7 +1,7 @@
 import { TextField, InputAdornment } from '@mui/material';
 import { Search } from 'lucide-react';
 
-export function SearchInput({ placeholder = 'Search here...', value, onChange, 'aria-label': ariaLabel }) {
+export function SearchInput({ placeholder = 'Search here...', value, onChange, 'aria-label': ariaLabel, sx }) {
   return (
     <TextField
       placeholder={placeholder}
@@ -9,6 +9,7 @@ export function SearchInput({ placeholder = 'Search here...', value, onChange, '
       onChange={onChange}
       size="small"
       variant="outlined"
+      sx={sx}
       InputProps={{
         startAdornment: (
           <InputAdornment position="start" sx={{ mr: 1 }}>
