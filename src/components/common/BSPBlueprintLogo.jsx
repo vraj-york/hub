@@ -1,11 +1,12 @@
 import { Box } from '@mui/material';
+import bspBlueprintLogoDefault from '../../assets/images/bsp-blueprint-logo.png';
 
 /**
  * BSPBlueprint logo. Use variant="light" for dark backgrounds (e.g. email template logo container)
- * where wordmark must be white; default variant uses black wordmark (l.svg).
+ * where wordmark must be white; default variant uses the raster brand mark under src/assets.
  */
 export function BSPBlueprintLogo({ width, height, variant = 'default' }) {
-  const logoSrc = variant === 'light' ? '/vectors/l-white.svg' : '/vectors/l.svg';
+  const logoSrc = variant === 'light' ? '/vectors/l-white.svg' : bspBlueprintLogoDefault;
   return (
     <Box
       component="img"

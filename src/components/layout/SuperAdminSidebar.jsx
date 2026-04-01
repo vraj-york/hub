@@ -26,6 +26,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleSidebar, selectIsSidebarOpen } from '../../store/slices/uiSlice';
 import { selectCurrentCorporationLogoUrl } from '../../store/slices/corporationsSlice';
+import bspBlueprintLogo from '../../assets/images/bsp-blueprint-logo.png';
 
 const sidebarGroups = [
   {
@@ -104,7 +105,7 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
   
   // Check if we're on a corporation profile page
   const isCorporationProfilePage = location.pathname.match(/^\/corporations\/[^/]+\/profile/);
-  const logoSrc = isCorporationProfilePage && corporationLogoUrl ? corporationLogoUrl : '/vectors/l.svg';
+  const logoSrc = isCorporationProfilePage && corporationLogoUrl ? corporationLogoUrl : bspBlueprintLogo;
 
   const handleNavClick = (path) => {
     if (isDrawer && onNavigate) onNavigate();
