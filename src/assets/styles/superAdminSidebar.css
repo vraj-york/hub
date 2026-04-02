@@ -1,0 +1,17 @@
+/* Super admin layout sidebar — green surface (theme success) */
+:root {
+  --super-admin-sidebar-bg: #2f8f6b;
+  --super-admin-sidebar-divider: rgba(255, 255, 255, 0.22);
+  --super-admin-sidebar-section-label: rgba(255, 255, 255, 0.78);
+  --super-admin-sidebar-item-text: rgba(255, 255, 255, 0.92);
+  --super-admin-sidebar-item-text-on-strong: #ffffff;
+  --super-admin-sidebar-active-bg: rgba(0, 0, 0, 0.22);
+  --super-admin-sidebar-inactive-active-bg: rgba(255, 255, 255, 0.16);
+  --super-admin-sidebar-hover: rgba(255, 255, 255, 0.1);
+  --super-admin-sidebar-hover-strong: rgba(255, 255, 255, 0.12);
+  --super-admin-sidebar-accent-bar: #ffffff;
+  --super-admin-sidebar-meta-text: rgba(255, 255, 255, 0.85);
+  --super-admin-sidebar-icon-button: rgba(255, 255, 255, 0.9);
+  --super-admin-sidebar-badge-bg: rgba(255, 255, 255, 0.22);
+  --super-admin-sidebar-badge-text: #ffffff;
+}
