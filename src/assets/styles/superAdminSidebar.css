@@ -1,6 +1,6 @@
-/* Super admin layout sidebar — green surface (theme success) */
+/* Super admin layout sidebar — red surface (theme error) */
 :root {
-  --super-admin-sidebar-bg: #2f8f6b;
+  --super-admin-sidebar-bg: #c44755;
   --super-admin-sidebar-divider: rgba(255, 255, 255, 0.22);
   --super-admin-sidebar-section-label: rgba(255, 255, 255, 0.78);
   --super-admin-sidebar-item-text: rgba(255, 255, 255, 0.92);
