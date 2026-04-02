@@ -23,7 +23,6 @@ import {
   selectListSort,
 } from '../store/slices/corporationsSlice';
 import { STATUS_FILTER_OPTIONS, TIME_RANGE_OPTIONS } from '../data/mockCorporationsList';
-import '../assets/styles/corporationsDirectoryHeading.css';
 
 export function CorporationsDirectoryPage() {
   const navigate = useNavigate();
@@ -106,7 +105,7 @@ export function CorporationsDirectoryPage() {
                 fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
                 fontWeight: 600,
                 fontSize: 20,
-                color: 'var(--corporations-directory-heading-color)',
+                color: 'rgba(47, 65, 74, 1)',
                 mb: 0.5,
               }}
             >
