@@ -1,4 +1,4 @@
-/* Corporations directory page — main heading color (theme accent blue) */
+/* Corporations directory page — main heading color (aligned with theme success) */
 :root {
-  --corporations-directory-heading-color: #305fa1;
+  --corporations-directory-heading-color: #2f8f6b;
 }
