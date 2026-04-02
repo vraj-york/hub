@@ -23,6 +23,7 @@ import {
   selectListSort,
 } from '../store/slices/corporationsSlice';
 import { STATUS_FILTER_OPTIONS, TIME_RANGE_OPTIONS } from '../data/mockCorporationsList';
+import '../assets/styles/corporationsDirectoryFilters.css';
 
 export function CorporationsDirectoryPage() {
   const navigate = useNavigate();
@@ -172,6 +173,7 @@ export function CorporationsDirectoryPage() {
               aria-label="Filter by creation time range"
               selectedValueTextColor="rgba(47, 65, 74, 1)"
               inputBackground="rgba(255, 255, 255, 1)"
+              triggerSx={{ minWidth: 'var(--corporations-time-range-select-min-width)' }}
             />
           </Box>
           <CorporationsDirectoryTable

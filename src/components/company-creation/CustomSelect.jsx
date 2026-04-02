@@ -20,6 +20,7 @@ export function CustomSelect({
   'aria-label': ariaLabel,
   'aria-describedby': ariaDescribedby,
   'aria-labelledby': ariaLabelledby,
+  triggerSx = {},
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
@@ -89,6 +90,7 @@ export function CustomSelect({
           minHeight: 44,
           '&:hover': readOnly ? {} : { borderColor: 'rgba(58, 111, 216, 0.6)' },
           '&:focus-visible': readOnly ? {} : { outline: '2px solid rgba(58, 111, 216, 1)', outlineOffset: 2 },
+          ...triggerSx,
         }}
       >
         <Typography

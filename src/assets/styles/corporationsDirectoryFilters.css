@@ -1,0 +1,4 @@
+/* Corporation directory toolbar — time range filter trigger width */
+:root {
+  --corporations-time-range-select-min-width: 200px;
+}
