@@ -143,5 +143,5 @@ export const TIME_RANGE_OPTIONS = [
   { value: 'last_30_days', label: 'Last 30 days' },
   { value: 'last_90_days', label: 'Last 90 days' },
   { value: 'last_year', label: 'Last year' },
-  { value: 'all_time', label: 'All time' },
+  { value: 'all_time', label: 'All Time' },
 ];
