@@ -30,11 +30,13 @@ import bspBlueprintLogo from '../../assets/images/client-link-48-88409125.jpg';
 import dashboardNavIcon from '../../assets/images/client-link-49-8de7f6ef.webp';
 import '../../assets/styles/superAdminSidebarCompanyDirectory.css';
 import '../../assets/styles/superAdminSidebarUserDirectory.css';
+import clientSidebarLabel from '../../assets/navigation/clientSidebarLabel.json';
 
 const sidebarGroups = [
   {
     label: 'Main',
     items: [
+      { label: clientSidebarLabel.label, path: '/companies', icon: MapPin },
       {
         label: 'Dashboard',
         path: '/dashboard',
@@ -44,10 +46,7 @@ const sidebarGroups = [
   },
   {
     label: 'Administration',
-    items: [
-      { label: 'Corporation Directory', path: '/corporations', icon: Building2 },
-      { label: 'Company Directory', path: '/companies', icon: MapPin },
-    ],
+    items: [{ label: 'Corporation Directory', path: '/corporations', icon: Building2 }],
   },
   {
     label: 'Users & Access',
