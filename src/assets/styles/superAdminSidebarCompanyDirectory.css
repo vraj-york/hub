@@ -1,0 +1,8 @@
+/* Super admin sidebar — Company Directory nav item (yellow emphasis) */
+:root {
+  --sidebar-company-directory-fg: #ca8a04;
+  --sidebar-company-directory-hover-bg: rgba(254, 240, 138, 0.45);
+  --sidebar-company-directory-active-bg: #fde047;
+  --sidebar-company-directory-active-bg-hover: #facc15;
+  --sidebar-company-directory-active-fg: #2f414a;
+}

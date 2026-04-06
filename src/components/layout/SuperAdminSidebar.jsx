@@ -28,6 +28,7 @@ import { toggleSidebar, selectIsSidebarOpen } from '../../store/slices/uiSlice';
 import { selectCurrentCorporationLogoUrl } from '../../store/slices/corporationsSlice';
 import bspBlueprintLogo from '../../assets/images/client-link-48-88409125.jpg';
 import dashboardNavIcon from '../../assets/images/client-link-49-8de7f6ef.webp';
+import '../../assets/styles/superAdminSidebarCompanyDirectory.css';
 
 const sidebarGroups = [
   {
@@ -215,6 +216,54 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
               const ariaLabel = item.badgeCount
                 ? `${item.label}, ${item.badgeCount} new notification${item.badgeCount !== 1 ? 's' : ''}`
                 : `Navigate to ${item.label}`;
+              const companyDirNavSx =
+                isCompaniesDirectory && isCompaniesDirectoryActive
+                  ? {
+                      background: 'var(--sidebar-company-directory-active-bg)',
+                      borderLeft: '4px solid transparent',
+                      color: 'var(--sidebar-company-directory-active-fg)',
+                      '&:hover': {
+                        background: 'var(--sidebar-company-directory-active-bg-hover)',
+                        color: 'var(--sidebar-company-directory-active-fg)',
+                      },
+                    }
+                  : isCompaniesDirectory
+                    ? {
+                        background: 'transparent',
+                        borderLeft: '4px solid transparent',
+                        color: 'var(--sidebar-company-directory-fg)',
+                        '&:hover': {
+                          background: 'var(--sidebar-company-directory-hover-bg)',
+                          color: 'var(--sidebar-company-directory-fg)',
+                        },
+                      }
+                    : {
+                        background: isDashboardActive || isCompaniesDirectoryActive
+                          ? 'rgba(48, 95, 161, 1)'
+                          : isActive
+                            ? 'var(--color-grey-100)'
+                            : 'transparent',
+                        borderLeft:
+                          isActive && !isDashboardActive && !isCompaniesDirectoryActive
+                            ? '4px solid var(--color-accent-blue)'
+                            : '4px solid transparent',
+                        color: isDashboardActive || isCompaniesDirectoryActive
+                          ? 'rgba(255, 255, 255, 1)'
+                          : isActive
+                            ? 'var(--color-accent-blue)'
+                            : 'var(--color-primary-dark)',
+                        '&:hover': {
+                          background: isDashboardActive || isCompaniesDirectoryActive
+                            ? 'rgba(48, 95, 161, 0.9)'
+                            : isActive
+                              ? 'var(--color-grey-100)'
+                              : 'rgba(231, 237, 247, 0.5)',
+                          color: isDashboardActive || isCompaniesDirectoryActive
+                            ? 'rgba(255, 255, 255, 1)'
+                            : 'var(--color-accent-blue)',
+                        },
+                      };
+
               return (
                 <Box
                   key={item.path + item.label}
@@ -231,25 +280,7 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
                     px: 1.5,
                     borderRadius: 1,
                     cursor: 'pointer',
-                    background: isDashboardActive || isCompaniesDirectoryActive
-                      ? 'rgba(48, 95, 161, 1)'
-                      : isActive
-                        ? 'var(--color-grey-100)'
-                        : 'transparent',
-                    borderLeft: isActive && !isDashboardActive && !isCompaniesDirectoryActive ? '4px solid var(--color-accent-blue)' : '4px solid transparent',
-                    color: isDashboardActive || isCompaniesDirectoryActive
-                      ? 'rgba(255, 255, 255, 1)'
-                      : isActive
-                        ? 'var(--color-accent-blue)'
-                        : 'var(--color-primary-dark)',
-                    '&:hover': {
-                      background: isDashboardActive || isCompaniesDirectoryActive
-                        ? 'rgba(48, 95, 161, 0.9)'
-                        : isActive
-                          ? 'var(--color-grey-100)'
-                          : 'rgba(231, 237, 247, 0.5)',
-                      color: isDashboardActive || isCompaniesDirectoryActive ? 'rgba(255, 255, 255, 1)' : 'var(--color-accent-blue)',
-                    },
+                    ...companyDirNavSx,
                   }}
                 >
                   {item.iconSrc ? (
@@ -265,7 +296,7 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
                         objectFit: 'contain',
                         display: 'block',
                         filter:
-                          isDashboardActive || isCompaniesDirectoryActive
+                          isDashboardActive || (isCompaniesDirectoryActive && !isCompaniesDirectory)
                             ? 'brightness(0) invert(1)'
                             : undefined,
                       }}
@@ -279,14 +310,18 @@ export function SuperAdminSidebar({ variant, onNavigate, onClose } = {}) {
                           flexShrink: 0,
                           color: Icon === Settings
                             ? 'rgba(52, 76, 86, 1)'
-                            : isDashboardActive || isCompaniesDirectoryActive
-                              ? 'rgba(255, 255, 255, 1)'
-                              : 'rgba(47, 65, 74, 1)',
+                            : isCompaniesDirectory
+                              ? isCompaniesDirectoryActive
+                                ? 'var(--sidebar-company-directory-active-fg)'
+                                : 'var(--sidebar-company-directory-fg)'
+                              : isDashboardActive || isCompaniesDirectoryActive
+                                ? 'rgba(255, 255, 255, 1)'
+                                : 'rgba(47, 65, 74, 1)',
                         }}
                       />
                     )
                   )}
-                  <Typography variant="body2" sx={{ fontWeight: 400, fontSize: '0.875rem', flex: 1 }}>
+                  <Typography variant="body2" sx={{ fontWeight: 400, fontSize: '0.875rem', flex: 1, color: 'inherit' }}>
                     {item.label}
                   </Typography>
                   {item.badgeCount != null && item.badgeCount > 0 && (
