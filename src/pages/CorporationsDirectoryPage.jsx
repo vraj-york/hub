@@ -137,7 +137,7 @@ export function CorporationsDirectoryPage() {
               borderRadius: 2,
             }}
           >
-            Test
+            Add New Corporation
           </Button>
         </Box>
 
