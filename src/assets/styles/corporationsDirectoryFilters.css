@@ -1,7 +1,7 @@
 /* Corporation directory toolbar — filter combobox styles */
 :root {
   --corporations-status-select-min-width: 200px;
-  --corporations-status-select-background: #c44755;
+  --corporations-status-select-background: #305fa1;
   --corporations-status-select-foreground: rgba(255, 255, 255, 0.95);
   --corporations-time-range-select-min-width: 200px;
   /* Add corporation CTA (theme error red) */
