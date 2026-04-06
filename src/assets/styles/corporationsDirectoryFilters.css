@@ -4,8 +4,6 @@
   --corporations-status-select-background: #305fa1;
   --corporations-status-select-foreground: rgba(255, 255, 255, 0.95);
   --corporations-time-range-select-min-width: 200px;
-  --corporations-time-range-select-background: #c44755;
-  --corporations-time-range-select-foreground: rgba(255, 255, 255, 0.95);
   /* Add corporation CTA (theme error red) */
   --corporations-add-cta-bg: #c44755;
   --corporations-add-cta-bg-hover: #a12f3f;

@@ -199,15 +199,9 @@ export function CorporationsDirectoryPage() {
               onChange={handleTimeRangeChange}
               placeholder="Last 30 days"
               aria-label="Filter by creation time range"
-              selectedValueTextColor="var(--corporations-time-range-select-foreground)"
-              inputBackground="var(--corporations-time-range-select-background)"
-              triggerSx={{
-                minWidth: 'var(--corporations-time-range-select-min-width)',
-                '& svg': {
-                  color: 'var(--corporations-time-range-select-foreground)',
-                  stroke: 'var(--corporations-time-range-select-foreground)',
-                },
-              }}
+              selectedValueTextColor="rgba(47, 65, 74, 1)"
+              inputBackground="rgba(255, 255, 255, 1)"
+              triggerSx={{ minWidth: 'var(--corporations-time-range-select-min-width)' }}
             />
           </Box>
           <CorporationsDirectoryTable
