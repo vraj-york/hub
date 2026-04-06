@@ -14,14 +14,16 @@ import AINotetakerSettings from './components/pages/AINotetakerSettings';
 import SuggestionReviewPage from './components/pages/SuggestionReviewPage';
 import MeetingDetailPage from './components/pages/MeetingDetailPage';
 import AIAgentsHub from './components/pages/AIAgentsHub';
+import DocumentsShowcasePage from './components/pages/DocumentsShowcasePage';
 
 export const router = createBrowserRouter([
   { path: ROUTES.login, Component: LoginPage },
+  { path: ROUTES.documents, Component: DocumentsShowcasePage },
   {
     path: '/',
     Component: Layout,
     children: [
-      { index: true, element: <Navigate to="/projects" replace /> },
+      { index: true, element: <Navigate to={ROUTES.documents} replace /> },
       { path: 'projects', Component: ProjectsPage },
       { path: 'clients', Component: ClientsPage },
       { path: 'templates', Component: TemplatesPage },

@@ -1,10 +1,11 @@
 import { Outlet, NavLink, useLocation } from 'react-router';
 import {
   Users, FileText, FolderOpen, CheckSquare, Calendar,
-  Bell, HelpCircle, Zap, ChevronDown, Settings, Mic, Bot
+  Bell, HelpCircle, Zap, ChevronDown, Settings, Mic, Bot, Library
 } from 'lucide-react';
 
 const navItems = [
+  { label: 'Documents', icon: Library, path: '/documents' },
   { label: 'Clients', icon: Users, path: '/clients' },
   { label: 'Templates', icon: FileText, path: '/templates' },
   { label: 'Projects', icon: FolderOpen, path: '/projects' },

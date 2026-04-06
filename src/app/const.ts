@@ -1,6 +1,7 @@
 export const ROUTES = {
   root: '/',
   login: '/login',
+  documents: '/documents',
   projects: '/projects',
   clients: '/clients',
   templates: '/templates',
