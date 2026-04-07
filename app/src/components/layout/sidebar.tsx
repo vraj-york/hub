@@ -22,11 +22,19 @@ interface SidebarItemProps {
   label: string
   to?: string
   active?: boolean
+  /** Extra classes for the label (e.g. accent color). */
+  labelClassName?: string
 }
 
-function SidebarItem({ icon, label, to, active }: SidebarItemProps) {
+function SidebarItem({
+  icon,
+  label,
+  to,
+  active,
+  labelClassName = "",
+}: SidebarItemProps) {
   const baseClass =
-    "flex w-full items-center gap-3 rounded-md px-3 py-2 text-sm transition-colors " +
+    "flex w-full items-center gap-3 rounded-md px-3 py-2 text-sm font-normal transition-colors " +
     (active
       ? "bg-primary text-primary-foreground"
       : "text-muted-foreground hover:bg-muted/50 hover:text-foreground")
@@ -36,7 +44,7 @@ function SidebarItem({ icon, label, to, active }: SidebarItemProps) {
       <span className="flex h-5 w-5 shrink-0 items-center justify-center">
         {icon}
       </span>
-      <span className="flex-1 text-left">{label}</span>
+      <p className={`m-0 flex-1 text-left ${labelClassName}`.trim()}>{label}</p>
     </>
   )
 
@@ -99,7 +107,11 @@ export function Sidebar({ collapsed = false, activeItem }: SidebarProps) {
         {!collapsed && (
           <>
             <SidebarGroup label="Main">
-              <SidebarItem icon={<LayoutDashboard className="h-4 w-4" />} label="Dashboard" />
+              <SidebarItem
+                icon={<LayoutDashboard className="h-4 w-4" />}
+                label="Dashboard"
+                labelClassName="text-red-600"
+              />
             </SidebarGroup>
             <SidebarGroup label="Administration">
               <SidebarItem
