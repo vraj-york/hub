@@ -144,6 +144,7 @@ export function CorporationsDirectoryPage() {
               value={filters.searchText}
               onChange={handleSearchChange}
               aria-label="Search corporation directory"
+              sx={{ width: 320, maxWidth: '100%' }}
             />
             <CustomSelect
               options={STATUS_FILTER_OPTIONS}
