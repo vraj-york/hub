@@ -14,6 +14,7 @@ import {
   CreditCard,
   Landmark,
   Tag,
+  FolderKanban,
   FileQuestion,
   BookOpen,
   Activity,
@@ -31,7 +32,10 @@ import { selectCurrentCorporationLogoUrl } from '../../store/slices/corporations
 const sidebarGroups = [
   {
     label: 'Main',
-    items: [{ label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard }],
+    items: [
+      { label: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
+      { label: 'Projects', path: '/projects', icon: FolderKanban },
+    ],
   },
   {
     label: 'Administration',
