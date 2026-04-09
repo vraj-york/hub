@@ -130,7 +130,7 @@ export default function ProjectsPage() {
     <div className="flex flex-col h-full overflow-hidden">
       {/* Top bar */}
       <div className="h-[52px] border-b border-[#E5E7EB] flex items-center px-6 gap-3 flex-shrink-0 bg-white">
-        <h1 className="text-[20px] font-semibold text-[#DC2626]">All Projects</h1>
+        <h1 className="text-[20px] font-semibold text-[#111827]">All Projects</h1>
         <div className="ml-auto flex items-center gap-2">
           <button className="flex items-center gap-1.5 px-3 py-1.5 border border-[#E5E7EB] rounded text-[13px] text-[#374151] hover:bg-[#F9FAFB] transition-colors">
             <Filter size={13} /> Filters
