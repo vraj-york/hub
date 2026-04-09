@@ -139,7 +139,7 @@ export default function ProjectsPage() {
           <button className="flex items-center gap-1.5 px-3 py-1.5 border border-[#E5E7EB] rounded text-[13px] text-[#374151] hover:bg-[#F9FAFB] transition-colors">
             <Columns size={13} /> Add Columns
           </button>
-          <button className="flex items-center gap-1.5 px-3 py-1.5 border border-[#E5E7EB] rounded text-[13px] text-[#374151] bg-[#F3F4F6] hover:bg-[#E5E7EB] transition-colors">
+          <button className="flex items-center gap-1.5 px-3 py-1.5 border border-[#E5E7EB] rounded text-[13px] text-[#374151] hover:bg-[#F9FAFB] transition-colors">
             <Edit3 size={13} /> Bulk Edit
           </button>
           <button className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[13px] font-medium rounded transition-colors">
