@@ -12,8 +12,10 @@ import AINotetakerSettings from './components/pages/AINotetakerSettings';
 import SuggestionReviewPage from './components/pages/SuggestionReviewPage';
 import MeetingDetailPage from './components/pages/MeetingDetailPage';
 import AIAgentsHub from './components/pages/AIAgentsHub';
+import LoginPage from './components/pages/LoginPage';
 
 export const router = createBrowserRouter([
+  { path: '/login', Component: LoginPage },
   {
     path: '/',
     Component: Layout,
