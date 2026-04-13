@@ -19,6 +19,7 @@ import {
 	ForgotPasswordPage,
 	InvoiceManagementPage,
 	LoginPage,
+	ReleasePage,
 	RolesPermissionsPage,
 	UserDirectoryPage,
 	ViewCompanyPage,
@@ -55,6 +56,14 @@ export const routes: RouteConfig[] = [
 		element: (
 			<ProtectedRoute>
 				<DashboardPage />
+			</ProtectedRoute>
+		),
+	},
+	{
+		path: ROUTES.release.root,
+		element: (
+			<ProtectedRoute>
+				<ReleasePage />
 			</ProtectedRoute>
 		),
 	},

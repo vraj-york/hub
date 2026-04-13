@@ -6,5 +6,6 @@ export * from "./company-admin-dashboard.const";
 export * from "./corporations";
 export * from "./dashboard.const";
 export * from "./invoice-management.const";
+export * from "./release.const";
 export * from "./roles.const";
 export * from "./users";

@@ -57,6 +57,10 @@ export interface UserDirectoryRoutes {
 	root: string;
 }
 
+export interface ReleaseRoutes {
+	root: string;
+}
+
 export interface AppRoutes {
 	auth: AuthRoutes;
 	dashboard: DashboardRoutes;
@@ -66,4 +70,5 @@ export interface AppRoutes {
 	roles: RolesRoutes;
 	finance: FinanceRoutes;
 	userDirectory: UserDirectoryRoutes;
+	release: ReleaseRoutes;
 }
