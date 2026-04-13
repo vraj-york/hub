@@ -6,6 +6,8 @@ export const RELEASE_PAGE_CONTENT = {
 	columnActual: "Actual Release",
 	plannedLabel: "ReleaseDate",
 	actualLabel: "Actual Release Date",
+	plannedHeaderEyebrow: "Planned release dates",
+	actualHeaderEyebrow: "Actual release date",
 } as const;
 
 export type ReleaseTimelineEntry = {
