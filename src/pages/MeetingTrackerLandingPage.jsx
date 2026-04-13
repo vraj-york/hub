@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import meetingTrackerLandingContent from '../assets/data/meetingTrackerLandingContent.json';
+import meetingsTrackerMark from '../assets/images/meetings-tracker-mark.svg';
 
 const primaryMain = '#2F414A';
 const gradientStart = 'rgba(47, 65, 74, 0.05)';
@@ -35,8 +36,17 @@ export function MeetingTrackerLandingPage() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                gap: 1.5,
+                flexWrap: 'wrap',
               }}
             >
+              <Box
+                component="img"
+                src={meetingsTrackerMark}
+                alt=""
+                sx={{ width: 40, height: 40, flexShrink: 0, display: 'block' }}
+                aria-hidden
+              />
               <Typography
                 component="h1"
                 sx={{
