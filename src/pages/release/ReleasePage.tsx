@@ -26,6 +26,9 @@ const actualVariants = {
 	},
 } as const;
 
+const headerGridClass =
+	"mb-6 hidden pb-3 lg:grid lg:grid-cols-[minmax(0,1fr)_5.5rem_minmax(0,1fr)] lg:gap-x-8";
+
 function ReleaseDateGradientHeader({
 	eyebrow,
 	dateLine,
@@ -70,6 +73,31 @@ function ReleaseDateGradientHeader({
 	);
 }
 
+function TimelineNodeBlock({
+	version,
+	timelineDate,
+}: {
+	version: string;
+	timelineDate: string;
+}) {
+	return (
+		<div className="flex flex-col items-center pt-1 text-center lg:pt-0">
+			<div
+				className="relative z-[1] flex size-8 shrink-0 items-center justify-center rounded-full bg-success-bg shadow-[0_0_0_1px_rgba(255,255,255,0.5)_inset]"
+				aria-hidden
+			>
+				<span className="size-3.5 rounded-full bg-success shadow-sm ring-2 ring-background" />
+			</div>
+			<span className="relative z-[1] mt-2 text-small font-bold text-text-foreground">
+				{version}
+			</span>
+			<span className="relative z-[1] mt-0.5 text-xs text-text-secondary">
+				{timelineDate}
+			</span>
+		</div>
+	);
+}
+
 export function ReleasePage() {
 	const breadcrumbs = [
 		{
@@ -89,95 +117,130 @@ export function ReleasePage() {
 				</p>
 			</div>
 
-			<div className="flex flex-col gap-0 lg:flex-row lg:gap-10">
-				{/* Timeline — green halo nodes + vertical connector */}
-				<div className="relative mx-auto shrink-0 lg:mx-0 lg:w-44">
-					<ul className="flex flex-col items-center">
-						{RELEASE_TIMELINE_MOCK.map((entry, index) => {
-							const isLast = index === RELEASE_TIMELINE_MOCK.length - 1;
-							return (
-								<li
-									key={entry.id}
-									className="flex flex-col items-center text-center"
-								>
-									<div
-										className="flex size-8 shrink-0 items-center justify-center rounded-full bg-success-bg shadow-[0_0_0_1px_rgba(255,255,255,0.5)_inset]"
-										aria-hidden
-									>
-										<span className="size-3.5 rounded-full bg-success shadow-sm ring-2 ring-background" />
-									</div>
-									<span className="mt-2 text-small font-bold text-text-foreground">
-										{entry.version}
-									</span>
-									<span className="mt-0.5 text-xs text-text-secondary">
-										{entry.timelineDate}
-									</span>
-									{!isLast ? (
-										<div
-											className="mt-3 h-10 w-1 shrink-0 rounded-full bg-border"
-											aria-hidden
-										/>
-									) : null}
-								</li>
-							);
-						})}
-					</ul>
-				</div>
-
-				{/* Cards + column headers */}
-				<div className="min-w-0 flex-1 space-y-4">
-					<div className="grid grid-cols-2 gap-4 border-b border-border pb-3 pl-1">
-						<div className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
-							{RELEASE_PAGE_CONTENT.columnPlanned}
-						</div>
-						<div className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+			<div className="mb-6 border-b border-border pb-3 lg:mb-8">
+				<div className="space-y-3 lg:hidden">
+					<p className="text-center text-xs font-semibold uppercase tracking-wide text-text-secondary">
+						{RELEASE_PAGE_CONTENT.columnTimeline}
+					</p>
+					<div className="grid grid-cols-2 gap-3 text-xs font-semibold uppercase tracking-wide text-text-secondary">
+						<div>{RELEASE_PAGE_CONTENT.columnPlanned}</div>
+						<div className="text-end">
 							{RELEASE_PAGE_CONTENT.columnActual}
 						</div>
 					</div>
-
-					<div className="flex flex-col gap-6">
-						{RELEASE_TIMELINE_MOCK.map((entry, rowIndex) => {
-							const actualVariant =
-								rowIndex % 2 === 0 ? ("pink" as const) : ("teal" as const);
-							return (
-								<Card
-									key={entry.id}
-									className="overflow-hidden border-border shadow-md"
-									size="sm"
-								>
-									<CardContent className="grid grid-cols-1 gap-0 p-0 sm:grid-cols-2">
-										<div className="flex flex-col border-border sm:border-r">
-											<div
-												className="h-1.5 w-full shrink-0 bg-destructive"
-												aria-hidden
-											/>
-											<div className="p-5">
-												<ReleaseDateGradientHeader
-													eyebrow={RELEASE_PAGE_CONTENT.plannedHeaderEyebrow}
-													dateLine={entry.plannedDateDisplay}
-													variant="planned"
-												/>
-											</div>
-										</div>
-										<div className="flex flex-col justify-end border-t border-border sm:border-t-0">
-											<div className="p-5 pt-6 sm:pt-8">
-												<div className="sm:mt-4">
-													<ReleaseDateGradientHeader
-														eyebrow={
-															RELEASE_PAGE_CONTENT.actualHeaderEyebrow
-														}
-														dateLine={entry.actualDateDisplay}
-														variant={actualVariant}
-													/>
-												</div>
-											</div>
-										</div>
-									</CardContent>
-								</Card>
-							);
-						})}
+				</div>
+				<div className={headerGridClass}>
+					<div className="text-xs font-semibold uppercase tracking-wide text-text-secondary">
+						{RELEASE_PAGE_CONTENT.columnPlanned}
+					</div>
+					<div className="text-center text-xs font-semibold uppercase tracking-wide text-text-secondary">
+						{RELEASE_PAGE_CONTENT.columnTimeline}
+					</div>
+					<div className="text-xs font-semibold uppercase tracking-wide text-text-secondary lg:text-end">
+						{RELEASE_PAGE_CONTENT.columnActual}
 					</div>
 				</div>
+			</div>
+
+			{/* Desktop: planned | timeline | actual */}
+			<div className="hidden lg:flex lg:gap-8 lg:items-start">
+				<div className="min-w-0 flex-1 space-y-10">
+					{RELEASE_TIMELINE_MOCK.map((entry) => (
+						<Card
+							key={`planned-${entry.id}`}
+							className="overflow-hidden border-border shadow-md"
+							size="sm"
+						>
+							<div className="h-1.5 w-full shrink-0 bg-success" aria-hidden />
+							<CardContent className="p-5">
+								<ReleaseDateGradientHeader
+									eyebrow={RELEASE_PAGE_CONTENT.plannedHeaderEyebrow}
+									dateLine={entry.plannedDateDisplay}
+									variant="planned"
+								/>
+							</CardContent>
+						</Card>
+					))}
+				</div>
+
+				<div className="relative flex w-[5.5rem] shrink-0 flex-col items-center gap-10 self-stretch">
+					<div
+						className="absolute top-0 bottom-0 left-1/2 z-0 w-px -translate-x-1/2 rounded-full bg-border"
+						aria-hidden
+					/>
+					{RELEASE_TIMELINE_MOCK.map((entry) => (
+						<TimelineNodeBlock
+							key={`node-${entry.id}`}
+							version={entry.version}
+							timelineDate={entry.timelineDate}
+						/>
+					))}
+				</div>
+
+				<div className="min-w-0 flex-1 space-y-10">
+					{RELEASE_TIMELINE_MOCK.map((entry, rowIndex) => {
+						const actualVariant =
+							rowIndex % 2 === 0 ? ("pink" as const) : ("teal" as const);
+						return (
+							<Card
+								key={`actual-${entry.id}`}
+								className="overflow-hidden border-border shadow-md"
+								size="sm"
+							>
+								<CardContent className="p-5 lg:pt-7">
+									<div className="lg:mt-1">
+										<ReleaseDateGradientHeader
+											eyebrow={RELEASE_PAGE_CONTENT.actualHeaderEyebrow}
+											dateLine={entry.actualDateDisplay}
+											variant={actualVariant}
+										/>
+									</div>
+								</CardContent>
+							</Card>
+						);
+					})}
+				</div>
+			</div>
+
+			{/* Mobile: stacked blocks per release (planned → timeline → actual) */}
+			<div className="flex flex-col gap-10 lg:hidden">
+				{RELEASE_TIMELINE_MOCK.map((entry, rowIndex) => {
+					const actualVariant =
+						rowIndex % 2 === 0 ? ("pink" as const) : ("teal" as const);
+					return (
+						<div key={entry.id} className="flex flex-col gap-4">
+							<Card
+								className="overflow-hidden border-border shadow-md"
+								size="sm"
+							>
+								<div className="h-1.5 w-full shrink-0 bg-success" aria-hidden />
+								<CardContent className="p-5">
+									<ReleaseDateGradientHeader
+										eyebrow={RELEASE_PAGE_CONTENT.plannedHeaderEyebrow}
+										dateLine={entry.plannedDateDisplay}
+										variant="planned"
+									/>
+								</CardContent>
+							</Card>
+							<TimelineNodeBlock
+								version={entry.version}
+								timelineDate={entry.timelineDate}
+							/>
+							<Card
+								className="overflow-hidden border-border shadow-md"
+								size="sm"
+							>
+								<CardContent className="p-5">
+									<ReleaseDateGradientHeader
+										eyebrow={RELEASE_PAGE_CONTENT.actualHeaderEyebrow}
+										dateLine={entry.actualDateDisplay}
+										variant={actualVariant}
+									/>
+								</CardContent>
+							</Card>
+						</div>
+					);
+				})}
 			</div>
 		</AppLayout>
 	);
