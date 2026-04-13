@@ -4,7 +4,7 @@ test.describe('Dashboard Page', () => {
   test('navigates to /dashboard and shows layout', async ({ page }) => {
     await page.goto('/dashboard');
     await expect(page).toHaveURL('/dashboard');
-    await expect(page.getByRole('heading', { name: 'Dashboard title test', level: 1 })).toBeVisible({ timeout: 10000 });
+    await expect(page.getByRole('heading', { name: 'Dashboard Overview', level: 1 })).toBeVisible({ timeout: 10000 });
     await expect(page.getByRole('navigation').first()).toBeVisible();
   });
 
@@ -13,9 +13,9 @@ test.describe('Dashboard Page', () => {
     await expect(page.getByText('Dashboard', { exact: true }).first()).toBeVisible({ timeout: 10000 });
   });
 
-  test('shows page title Dashboard title test and description', async ({ page }) => {
+  test('shows page title Dashboard Overview and description', async ({ page }) => {
     await page.goto('/dashboard');
-    await expect(page.getByRole('heading', { name: 'Dashboard title test', level: 1 })).toBeVisible({ timeout: 10000 });
+    await expect(page.getByRole('heading', { name: 'Dashboard Overview', level: 1 })).toBeVisible({ timeout: 10000 });
     await expect(page.getByText('Monitor and manage your entire platform')).toBeVisible();
   });
 
@@ -80,7 +80,7 @@ test.describe('Dashboard Page', () => {
 
     test('page title and empty state use updated typography', async ({ page }) => {
       await page.goto('/dashboard');
-      const heading = page.getByRole('heading', { name: 'Dashboard title test', level: 1 });
+      const heading = page.getByRole('heading', { name: 'Dashboard Overview', level: 1 });
       await expect(heading).toBeVisible({ timeout: 10000 });
       await expect(heading).toHaveCSS('font-size', '16px');
       await expect(page.getByText('No metrics available')).toBeVisible();
