@@ -1,6 +1,6 @@
 /** Company admin post-invite review (before Stripe checkout). */
 export const COMPANY_ADMIN_ONBOARDING = {
-	step1Title: "Basic Details",
+	step1Title: "Basic Test details",
 	step1Subtitle: "Review the details below to proceed with payment.",
 	step2TitlePrefix: "",
 	corporationSection: "Corporation Info.",
@@ -54,7 +54,7 @@ export const COMPANY_ADMIN_ONBOARDING = {
 	overviewPageTitle: "Company overview",
 	overviewPageSubtitle:
 		"Your subscription is active. Below is the company profile we have on file.",
-	overviewCardTitle: "Basic Details",
+	overviewCardTitle: "Basic Test details",
 	overviewCardSubtitle: "Corporation and company information.",
 	subscriptionStatusLabel: "Subscription status:",
 	companiesListCardTitle: "Companies",
