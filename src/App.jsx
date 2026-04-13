@@ -14,7 +14,6 @@ import { EmailVerificationPage } from './pages/EmailVerificationPage';
 import { EmailVerificationCodeTemplate } from './components/email-templates/EmailVerificationCodeTemplate';
 import { AddCompanyPage } from './pages/AddCompanyPage';
 import { ProjectsPage } from './pages/ProjectsPage';
-import { MeetingTrackerLandingPage } from './pages/MeetingTrackerLandingPage';
 import { CorporationsAddRoute } from './pages/CorporationsAddRoute';
 import { GlobalToast } from './components/common/GlobalToast';
 
@@ -22,7 +21,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<MeetingTrackerLandingPage />} />
+        <Route path="/" element={<Navigate to="/corporations" replace />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/corporations" element={<CorporationsDirectoryPage />} />
