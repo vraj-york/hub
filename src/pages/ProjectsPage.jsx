@@ -30,7 +30,7 @@ export function ProjectsPage() {
               margin: 0,
               fontSize: 20,
               fontWeight: 600,
-              color: projectsPageContent.pageTitleColor,
+              color: '#111827',
               lineHeight: 1.5,
             }}
           >
