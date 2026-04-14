@@ -1,9 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 test.describe('Corporation Directory Page', () => {
-  test('shows page title, description, and Add New Corporation button', async ({ page }) => {
+  test('shows description and Add New Corporation button', async ({ page }) => {
     await page.goto('/corporations');
-    await expect(page.getByRole('heading', { name: 'My Corporations', level: 1 })).toBeVisible();
     await expect(page.getByText('View and manage all corporations across the platform')).toBeVisible();
     await expect(page.getByRole('button', { name: 'Add a new corporation' })).toBeVisible();
   });

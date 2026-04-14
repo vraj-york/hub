@@ -23,7 +23,6 @@ import {
   selectListSort,
 } from '../store/slices/corporationsSlice';
 import { STATUS_FILTER_OPTIONS, TIME_RANGE_OPTIONS } from '../data/mockCorporationsList';
-import corporationsDirectoryPageContent from '../assets/data/corporationsDirectoryPageContent.json';
 
 export function CorporationsDirectoryPage() {
   const navigate = useNavigate();
@@ -87,19 +86,6 @@ export function CorporationsDirectoryPage() {
       <Box component="main" role="main" sx={{ py: 3, px: 0 }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 2, mb: 3 }}>
           <Box>
-            <Typography
-              component="h1"
-              variant="h5"
-              sx={{
-                fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
-                fontWeight: 600,
-                fontSize: 20,
-                color: 'rgba(211, 47, 47, 1)',
-                mb: 0.5,
-              }}
-            >
-              {corporationsDirectoryPageContent.pageTitle}
-            </Typography>
             <Typography
               sx={{
                 fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
