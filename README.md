@@ -1,7 +1,7 @@
 
-  # OtterMon AI - Web UI/UX
+  # July - Hub Socrates
 
-  This is a code bundle for OtterMon AI - Web UI/UX. The original project is available at https://www.figma.com/design/ZmCbtmQqLrk5S67aYmKyFy/OtterMon-AI---Web-UI-UX.
+  This is a code bundle for July - Hub Socrates. The original project is available at https://www.figma.com/design/taSixtW9D7QHX0EfoLeF6p/July---Hub-Socrates.
 
   ## Running the code
 
