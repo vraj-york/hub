@@ -27,11 +27,11 @@ const plannedHeaderClass =
 const plannedIconBoxClass = "bg-[#FAF6ED] text-[#78350F]";
 const plannedEyebrowClass = "text-[#B45309]";
 
-/** Mint/teal timeline (reference UI). */
-const timelineTeal = {
-	ring: "bg-[#CCFBF1]",
-	dot: "bg-[#14B8A6]",
-	badge: "bg-[#14B8A6] text-white",
+/** Timeline node + MVP badge — BSP brand blues. */
+const timelineBlue = {
+	ring: "bg-[var(--bspBlue100)]",
+	dot: "bg-[var(--bspBlueBase)]",
+	badge: "bg-[var(--bspBlueBase)] text-white",
 } as const;
 
 const actualThemes: Record<
@@ -330,14 +330,14 @@ function TimelineNodeBlock({ version }: { version: string }) {
 			<div
 				className={cn(
 					"relative z-[1] flex size-9 shrink-0 items-center justify-center rounded-full shadow-[0_0_0_1px_rgba(255,255,255,0.6)_inset]",
-					timelineTeal.ring,
+					timelineBlue.ring,
 				)}
 				aria-hidden
 			>
 				<span
 					className={cn(
 						"size-4 rounded-full shadow-sm ring-2 ring-background",
-						timelineTeal.dot,
+						timelineBlue.dot,
 					)}
 				/>
 			</div>
@@ -347,7 +347,7 @@ function TimelineNodeBlock({ version }: { version: string }) {
 			<span
 				className={cn(
 					"relative z-[1] rounded-full px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide",
-					timelineTeal.badge,
+					timelineBlue.badge,
 				)}
 			>
 				{RELEASE_PAGE_CONTENT.timelineMvpBadge}
