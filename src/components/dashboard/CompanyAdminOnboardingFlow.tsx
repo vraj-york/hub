@@ -85,7 +85,7 @@ export function CompanyAdminOnboardingFlow({
 							<CardTitle className="text-heading-4 font-semibold text-text-foreground">
 								{C.step1Title}
 							</CardTitle>
-							<CardDescription className="text-small font-normal text-destructive">
+							<CardDescription className="text-small font-normal text-text-secondary">
 								{C.step1Subtitle}
 							</CardDescription>
 						</CardHeader>
